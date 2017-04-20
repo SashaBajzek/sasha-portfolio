@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: $palecerulean-darkest;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.section__header {
+	text-align: center;
+}
+
+/* Desktop Screen Size */
+
+@media (min-width: $screen-md-min) {
+	.section__header {
+		font-size: 25px;
+	}
+}

@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+.sunflower__petal--accent,
+.sunflower__petal--main {
+	animation: sunflower-rotation 40s infinite linear;
+}
+
+@keyframes sunflower-rotation {
+	0% {transform: rotate(0deg); transform-origin: center;}
+	100% {transform: rotate(360deg); transform-origin: center;}
+}
+
+
+.day {
+
+	.sunflower__leaf--accent,
+	.sunflower__leaf--main,
+	.sunflower__petal--accent,
+	.sunflower__petal--main,
+	.sunflower__center--main {
+		fill: $pistachio;
+	}
+
+}
+
+
+.night {
+	
+	.sunflower__leaf--accent,
+	.sunflower__leaf--main,
+	.sunflower__petal--accent,
+	.sunflower__petal--main,
+	.sunflower__center--main {
+		fill: $pistachio-dark;
+	}
+	
+}

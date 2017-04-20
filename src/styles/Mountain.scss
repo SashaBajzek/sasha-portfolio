@@ -1,0 +1,34 @@
+@import './variables';
+
+.mountain__st0 {
+	stroke: $blackgrey;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+}
+
+.day .mountain__st0 {
+	fill: $independence;
+}
+
+.night .mountain__st0 {
+	fill: $independence-dark;
+}
+
+.mountain__st1 {
+	fill: $clean;
+}
+
+.day .mountain__st2 {
+	fill: $independence;
+}
+
+.night .mountain__st2 {
+	fill: $independence-dark;
+}
+
+.mountain__st3 {
+	fill: none;
+	stroke: $blackgrey;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+}

@@ -1,0 +1,83 @@
+@import './variables.scss';
+
+.buildings__window--accent {
+	fill: $clean;
+}
+
+.buildings__window--main {
+	fill: $maize;
+}
+
+.day {
+	
+	.buildings__main {
+		fill: $independence;
+	}
+
+	.buildings__tower--detail {
+		fill: none;
+		stroke: $independence;
+		stroke-width: 0.25;
+		stroke-miterlimit: 10;
+	}
+
+	.buildings__tower {
+		fill: none;
+		stroke: $independence;
+		stroke-miterlimit: 10;
+	}
+
+}
+
+
+.night {
+	
+	.buildings__main {
+		fill: $independence-dark;
+	}
+
+	.buildings__tower--detail {
+		fill: none;
+		stroke: $independence-dark;
+		stroke-width: 0.25;
+		stroke-miterlimit: 10;
+	}
+
+	.buildings__tower {
+		fill: none;
+		stroke: $independence-dark;
+		stroke-miterlimit: 10;
+	}
+	
+}
+				
+.buildings__st5 {
+	fill: none;
+	stroke: $clean;
+	stroke-width: 0.125;
+	stroke-miterlimit: 10;
+}
+
+.buildings__window--main {
+	animation: window-accent 10s infinite linear;
+}
+
+@keyframes window-accent {
+	0% {fill:$maize;}
+	20% {fill:$maize;}
+	50% {fill:$clean;}
+	80% {fill:$maize;}
+	100% {fill:$maize;}
+}
+
+.buildings__window--accent {
+	animation: window-accent2 10s infinite linear;
+}
+
+@keyframes window-accent2 {
+	0% {fill:$clean;}
+	20% {fill:$clean;}
+	50% {fill:$blackgrey;}
+	80% {fill:$clean;}
+	100% {fill:$clean;}
+}

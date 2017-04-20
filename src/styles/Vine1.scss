@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+.day .vine1 {
+	fill: $pistachio;
+}
+
+.night .vine1 {
+	fill: $pistachio-dark;
+}
+
+.vine1 {
+	animation: vine1-movement 10s infinite linear;
+}
+
+@keyframes vine1-movement {
+	0% {transform: rotate(0deg) scale(1); transform-origin: bottom;}
+	25% {transform: rotate(0.75deg) scale(1.005); transform-origin: bottom;}
+	50% {transform: rotate(0deg) scale(1); transform-origin: bottom;}
+	75% {transform: rotate(-0.75deg) scale(1.005); transform-origin: bottom;}
+	100% {transform: rotate(0deg) scale(1); transform-origin: bottom;}
+}

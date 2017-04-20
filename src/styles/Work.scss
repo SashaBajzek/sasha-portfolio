@@ -1,0 +1,225 @@
+@import './variables.scss';
+
+.section--work {
+	background-color: $queenblue-dark;
+	color: $maize;
+	padding-top: 75px;
+	padding-bottom: 100px;
+	position: relative;
+}
+
+.container--work {
+	margin: 0 auto;
+	padding: 0;
+	max-width: $screen-xs-min - 50px;
+}
+
+.night .section--work {
+	background-color: $queenblue-dark;
+	color: $maize;
+}
+
+.day .section--work {
+	background-color: $palecerulean-light;
+	color: $queenblue-dark;
+}
+
+.work__resume {
+	background-color: $maize-lighter;
+	background-image: url(../../public/feather.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 5px solid $queenblue-dark;
+	border-radius: 50%;
+	color: $blackgrey;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	height: 120px;
+	left: 0;
+	line-height: 110px;
+	margin: 0 auto;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: -60px;
+	width: 120px;
+}
+
+.night .work__resume:hover {
+	background-color: $palecerulean-light;
+}
+
+.day .work__resume:hover {
+	background-color: $independence-lighter;
+}
+
+.work__resume-text {
+	margin: 0;
+	transition: transform 0s ease-out;
+}
+
+.work__resume-text:hover {
+	transform: translate(0, -110px);
+}
+
+.list--projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+}
+
+.project {
+	background-color: teal;
+	height: 200px;
+	margin: 20px;
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+}
+
+.project__image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 200px;
+	margin: 0;
+	width: 300px;
+}
+
+.project__link {
+	display: block;
+}
+
+.project__description {
+	color: white;
+}
+
+.project__heading {
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.project__description {
+	color: white;
+}
+
+.project__click {
+	color: white;
+	text-align: center;
+}
+
+.project__click:hover {
+	color: $maize;
+}
+
+.project__text {
+	background-color: rgba(0,0,0,0.7);
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	justify-content: space-between;
+	padding: 10px;
+	position: absolute;
+	transition: transform .3s ease-out;
+	width: 300px;
+}
+
+.project:hover .project__text {
+	transform: translate(0, -200px);
+}
+
+.project__image--Twitter {
+	background-image: url(../../public/BeachTwitter--Small.png);
+}
+
+.project__image--Haiku {
+	background-image: url(../../public/Haiku--Small.png);
+}
+
+.project__image--Spectrum {
+	background-image: url(../../public/Spectrum--Small.png);
+}
+
+.project__image--Calgary {
+	background-image: url(../../public/Calgary--Small.png);
+}
+
+.project__image--CP1 {
+	background-image: url(../../public/CP1--Small.png);
+}
+
+.project__image--IL104 {
+	background-image: url(../../public/IL104--Small.png);
+}
+
+.project__image--HCB {
+	background-image: url(../../public/HCB--Small.png);
+}
+
+.work__image--buildings {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 80%;
+}
+
+.work__image--mountain {
+	bottom: 0;
+	position: absolute;
+	right: 10px;
+	width: 35%;
+	visibility: hidden;
+}
+
+/* Media Sizes */
+
+@media (min-width: $screen-sm-min) {
+	
+	.container--work {
+		max-width: $screen-sm-min;
+	}
+	.work__image--buildings {
+		width: 45%;
+	}
+
+	.work__image--mountain {
+		visibility: visible;
+	}
+
+	
+}
+
+/* Desktop Screen Size */
+
+@media (min-width: $screen-md-min) {
+
+	.container--work {
+		max-width: $screen-md-min;
+	}
+	
+}
+
+/* XL Desktop Screen Size */
+
+@media (min-width: $screen-lg-min) {
+	.container--work {
+		max-width: $screen-md-min;
+	}
+	
+	.work__image--buildings {
+		width: 35%;
+	}
+
+	.work__image--mountain {
+		width: 25%;
+	}
+	
+	
+}
+

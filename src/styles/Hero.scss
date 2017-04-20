@@ -1,0 +1,246 @@
+@import './variables.scss';
+
+.section--hero {
+	font-size: 20px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 50px 0 100px;
+	position: relative;
+	text-align: center;
+}
+
+.container--hero {
+	margin: 0 auto;
+	padding: 0;
+	max-width: $screen-sm-min - 200px;
+}
+
+.day .section--hero {
+	background-color: $palecerulean-light;
+	color: $queenblue-dark;
+}
+
+.night .section--hero {
+	background-color: $queenblue-dark;
+	box-shadow: inset 0 300px 300px -300px rgba(9,13,19,1);
+	color: $maize;
+}
+
+.hero__image--earth {
+	bottom: -100px;
+	height: 200px;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	right: 0;
+}
+
+.hero__image--rocket {
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	right: 5%;
+	top: 90px;
+}
+
+.hero__image--rocket:hover {
+	animation: rocket-takeoff 5s infinite ease-out;
+}
+
+@keyframes rocket-takeoff {
+	0% {transform: rotate(0deg); transform-origin: center;}
+	2% {transform: rotate(1deg); transform-origin: center;}
+	4% {transform: rotate(-2deg); transform-origin: center;}
+	6% {transform: rotate(1deg); transform-origin: center;}
+	8% {transform: translate(0, 0) scale(1);}
+	100% {transform: translate(50px, -200px) scale(0.3);}
+}
+
+.hero__tooltipcontainer--moon,
+.hero__tooltipcontainer--sun {
+	height: 60px;
+	left: 4%;
+	position: absolute;
+	top: 70px;
+}
+
+.hero__image-text--moon,
+.hero__image-text--sun {
+	border-radius: 6px;
+	bottom: 100%;
+	font-size: 12px;
+	font-weight: bold;
+	left: 50%;
+	opacity: 0;
+	padding: 3px 0;
+	position: absolute;
+	text-align: center;
+	transition: opacity 1s;
+	visibility: hidden;
+	z-index: 3;
+}
+
+.hero__image-text--moon {
+	background-color: $clean;
+	color: $queenblue-darker;
+	margin-left: -40px;
+	width: 80px;
+}
+
+.hero__image-text--sun {
+	background-color: $queenblue-darker;
+	color: $maize;
+	margin-left: -45px;
+	width: 90px;
+}
+
+.hero__image-text--moon::after,
+.hero__image-text--sun::after {
+	border-width: 5px;
+	border-style: solid;
+	border-color: $clean transparent transparent transparent;
+	content: "";
+	left: 50%;
+	margin-left: -5px;
+	position: absolute;
+	top: 100%;	
+}
+
+.hero__image-text--moon::after {
+	border-color: $clean transparent transparent transparent;
+}
+
+.hero__image-text--sun::after {
+	border-color: $queenblue-darker transparent transparent transparent;
+}
+
+.hero__tooltipcontainer--moon:hover .hero__image-text--moon,
+.hero__tooltipcontainer--sun:hover .hero__image-text--sun {
+	opacity: 1;
+	visibility: visible;
+}
+
+.hero__image--moon,
+.hero__image--sun {
+	height: 60px;
+	transition: transform 2s ease-in;
+}
+
+.day .hero__image--moon,
+.day .hero__tooltipcontainer--moon,
+.night .hero__image--sun,
+.night .hero__tooltipcontainer--sun{
+	visibility: hidden;
+}
+
+.hero__image--moon:hover, .hero__image--sun:hover {
+	cursor: pointer;
+	transform: rotate(-15deg) scale(1.2);
+}
+
+/* Media Sizes */
+
+@media (min-width: $screen-sm-min) {
+	.section--hero {
+		font-size: 35px;
+		padding: 10px 0 100px;
+	}
+	
+	.container--hero {
+		max-width: $screen-sm-min;
+	}
+	
+	.hero__image--earth {
+		bottom: -110px;
+		height: 220px;
+	}
+	
+	.hero__image--rocket {
+		height: 125px;
+		right: 100px;
+		top: 50px;
+	}
+	
+	.hero__image--moon,
+	.hero__image--sun {
+		height: 90px;
+	}
+	
+	.hero__tooltipcontainer--moon,
+	.hero__tooltipcontainer--sun {
+		height: 100px;
+		left: 80px;
+		top: 50px;
+	}
+	
+	.hero__image-text--moon,
+	.hero__image-text--sun {
+		border-radius: 6px;
+		font-size: 14px;
+		padding: 5px 0;
+	}
+	
+	.hero__image-text--moon {
+		margin-left: -50px;
+		width: 100px;
+	}
+
+	.hero__image-text--sun {
+		margin-left: -60px;
+		width: 120px;
+	}
+
+	
+}
+
+/* Desktop Screen Size */
+
+@media (min-width: $screen-md-min) {
+	.section--hero {
+		font-size: 50px;
+	}
+	
+	.container--hero {
+		max-width: $screen-md-min - 50px;
+	}
+	
+	.hero__image--rocket {
+		height: 150px;
+		right: 100px;
+		top: 50px;
+	}
+	
+	.hero__image--moon,
+	.hero__image--sun {
+		height: 100px;
+	}
+	
+	.hero__tooltipcontainer--moon,
+	.hero__tooltipcontainer--sun {
+		height: 100px;
+		left: 100px;
+		top: 50px;
+	}
+	
+}
+
+
+/* XL Desktop Screen Size */
+
+@media (min-width: $screen-lg-min) {
+	.container--hero {
+		max-width: $screen-md-min;
+	}
+	
+	.hero__image--rocket {
+		right: 15%;
+	}
+	
+	.hero__tooltipcontainer--moon,
+	.hero__tooltipcontainer--sun {
+		left: 15%;
+	}
+	
+}

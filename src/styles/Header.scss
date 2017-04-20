@@ -1,0 +1,266 @@
+@import './variables.scss';
+
+header {
+	color: $clean;
+	font-size: 16px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.container--header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
+	max-width: $screen-sm-min - 50px;
+}
+
+.day header {
+	background-color: $palecerulean-darkest;
+}
+
+.night header {
+	background-color: $queenblue-darkest;
+}
+
+.header__name {
+	color: $maize-light;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 5px auto 5px 20px;
+	text-align: center;
+}
+
+.header__nav {
+	background-color: $queenblue-darker;
+	bottom: 0;
+	flex-grow: 1;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 40px;
+	transform: translateX(100%);
+	transition: transform 1.5s ease;
+	z-index: 2;
+}
+
+.menuOpen .header__nav {
+	flex-direction: column;
+	justify-content: space-around;
+	transform: translateX(0);
+	transition: transform 1.5s ease;
+}
+
+
+.list--header-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.listItem--header-nav {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.listItem__text--header-nav {
+	color: $clean;
+	display: block;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.listItem__text--header-nav:hover {
+	color: $maize;
+	cursor: pointer;
+}
+
+.listItem__underline--header-nav {
+	border-bottom: solid transparent 2px;
+}
+
+.listItem__text--header-nav:hover .listItem__underline--header-nav {
+	border-bottom: solid $maize 2px;
+}
+
+
+
+
+
+.header__hamburger {
+	display: block;
+	height: 17px;
+	margin: 0 auto;
+	outline: none;
+	position: absolute;
+	right: 25px;
+	top: 11px;
+	width: 30px;
+}
+
+.day .header__hamburger {
+	background-color: $palecerulean-darkest;
+}
+
+.night .header__hamburger {
+	background-color: $queenblue-darkest;
+}
+
+
+.menuOpen {
+	
+	.header__hamburger {
+		border: none;
+	}
+
+	.header__hamburger:before,
+	.header__hamburger:after {
+		background: $maize;
+		content: "";
+		height: 3px;
+		left: 0px;
+		position: absolute;
+		top: 7px;
+		width: 100%;
+	}
+
+	.header__hamburger:before {
+		transform: rotate(-45deg);
+		transition: transform 0.25s;
+	}
+
+	.header__hamburger:after {
+		transform: rotate(45deg);
+		transition: transform 0.25s;
+	}
+
+	.header__hamburger:hover::before,
+	.header__hamburger:hover::after {
+		background: $maize;
+		transition: transform 0.25s, background .5s;
+	}	
+	
+}
+
+
+/* Hamburger Closed */
+
+.menuClosed {
+	
+	.header__hamburger {
+		border-bottom: 3px solid $clean;
+		border-left: none;
+		border-right: none;
+		border-top: 3px solid $clean;
+		transition: border-color .5s;
+	}
+
+	.header__hamburger:before,
+	.header__hamburger:after {
+		background: $clean;
+		content: "";
+		height: 3px;
+		left: 0px;
+		position: absolute;
+		top: 4px;
+		transform: rotate(0);
+		transition: transform 0.25s, background .5s;
+		width: 100%;	
+	}
+
+	.header__hamburger:hover {
+		border-color: $maize;
+		transition: border-color .5s, background .5s;
+	}
+
+	.header__hamburger:hover::before,
+	.header__hamburger:hover::after {
+		background: $maize;
+		transition: background .5s;
+	}
+	
+}
+
+
+
+
+
+/* Media Sizes */
+
+@media (min-width: $screen-sm-min) {
+	.container--header {
+		max-width: $screen-sm-min - 50px;
+	}
+	
+	.header__hamburger {
+		display: none;
+	}
+
+	header {
+		position: static;
+	}
+	
+	.header__nav {
+		display: flex;
+		flex-direction: row;
+		position: static;
+		transform: none;
+		transition: none;
+	}
+	
+	.day .header__nav {
+		background-color: $palecerulean-darkest;
+	}
+	
+	.night .header__nav {
+		background-color: $queenblue-darkest;
+	}
+	
+	.list--header-nav {
+		flex-direction: row;
+		flex-grow: 1;
+		justify-content: space-between;
+	}
+	
+	.listItem__text--header-nav {
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	
+	.header__name {
+		margin: 0;
+		width: 200px;
+	}
+	
+}
+
+
+
+/* Desktop Screen Size */
+
+@media (min-width: $screen-md-min) {
+	.container--header {
+		max-width: $screen-md-min - 50px;
+	}
+	
+	.header__name {
+		margin: 0;
+		width: 250px;
+	}
+	
+}
+
+/* XL Desktop Screen Size */
+
+@media (min-width: $screen-lg-min) {
+	.container--header {
+		max-width: $screen-md-min;
+	}
+	
+}

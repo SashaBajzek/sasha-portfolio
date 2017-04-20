@@ -1,0 +1,96 @@
+@import './variables';
+
+.section--skills {
+	color: $blackgrey;
+}
+
+.container--skills {
+	margin: 0 auto;
+	padding: 0;
+	max-width: $screen-sm-min - 200px;
+}
+
+.day .section--skills {
+	background-color: $pistachio;
+}
+
+.night .section--skills {
+	background-color: $pistachio-dark;
+}
+
+.list--skills-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 25px 0 75px;
+	margin: 0 auto;
+}
+
+.list__heading--skills-main {
+	text-align: center;
+}
+
+.list--skills-sub {
+	margin: 0 auto;
+	padding: 0;
+	width: 230px;
+}
+
+.skill {
+	align-content: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	transition: all 4s ease-out;
+}
+
+.skills__logo {
+	max-height: 30px;
+	max-width: 30px;
+	transition: all 4s ease-out;
+}
+
+.skills__logo:hover, .skill:hover .skills__logo {
+	transform: rotate(360deg) scale(1.5);
+}
+
+.skills__name {
+	color: $blackgrey; 
+	display: inline-block;
+	margin: 0;
+	padding: 5px 10px 5px;
+	line-height: 30px;
+}
+
+
+/* Media Sizes */
+
+@media (min-width: $screen-sm-min) {
+	
+	.container--skills {
+		max-width: $screen-sm-min;
+	}
+	
+	.list--skills-main {
+		flex-direction: row;
+	}
+	
+}
+
+/* Desktop Screen Size */
+
+@media (min-width: $screen-md-min) {
+	.container--skills {
+		max-width: $screen-md-min - 50px;
+	}
+	
+}
+
+/* XL Desktop Screen Size */
+
+@media (min-width: $screen-lg-min) {
+	.container--skills {
+		max-width: $screen-md-min;
+	}
+	
+}
