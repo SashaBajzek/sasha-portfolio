@@ -62,19 +62,19 @@ class Skills extends Component {
 								<li>
 									<a className="skill" href="https://en.wikipedia.org/wiki/Sewing#Garment_construction">
 										<p className="skills__name">Sewing</p>
-										<img className="skills__logo" src="./sewing.svg" alt="Sewing" />
+										<img className="skills__logo" src="./sewing.svg" alt="Sewing Thread" />
 									</a>
 								</li>
 								<li>
 									<a className="skill" href="https://en.wikipedia.org/wiki/Gardening">
-										<img className="skills__logo" src="./garden.svg" alt="Gardening" />
+										<img className="skills__logo" src="./garden.svg" alt="Gardening Gloves" />
 										<p className="skills__name">Gardening</p>
 									</a>
 								</li>
 								<li>
 									<a className="skill" href="https://en.wikipedia.org/wiki/Natural_skin_care">
 										<p className="skills__name">DIY Skincare</p>
-										<img className="skills__logo" src="./DIY.svg" alt="DIY Skincare" />
+										<img className="skills__logo" src="./DIY.svg" alt="DIY Skincare Pestle" />
 									</a>
 								</li>
 								<li>
@@ -104,7 +104,7 @@ class Skills extends Component {
 								<li>
 									<a className="skill" href="https://en.wikipedia.org/wiki/Table_football">
 										<p className="skills__name">Foosball</p>
-										<img className="skills__logo" src="./foosball.svg" alt="Foosball" />
+										<img className="skills__logo" src="./foosball.svg" alt="Foosball Table" />
 									</a>
 								</li>
 								<li>

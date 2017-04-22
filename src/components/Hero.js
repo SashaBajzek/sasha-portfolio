@@ -8,7 +8,7 @@ import '../styles/Hero.scss';
 class Hero extends Component {
 	render() {
 		return (
-			<div className="section--hero">
+			<div id="scrollTo--top" className="section--hero">
 				<div className="container--hero">
 					<h1>Hello World!</h1>
 					<h1>I'm Sasha!</h1>

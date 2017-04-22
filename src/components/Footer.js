@@ -1,16 +1,63 @@
 import React, { Component } from 'react';
-import { Link } from 'react-scroll';
+import { Link, scrollToTop } from 'react-scroll';
 import '../styles/Footer.scss';
 
 class Footer extends Component {
-	render() {
+	/* Need to add offset in mobile to account for the fixed header when using the scrollTo */
+	
+	constructor() {
+    super();
+    this.state = {
+      width:  0
+    }
+  }
+	
+	
+	offsetForScroll = width => {
+		if (this.state.width <= 768) {
+			return -40;
+		} else {
+			return 0;
+		}
+	}
+
+  /**
+   * Calculate & Update state of new dimensions
+   */
+  updateDimensions() {
+    if(window.innerWidth < 500) {
+      this.setState({ width: 450 });
+    } else {
+      let update_width  = window.innerWidth;
+      this.setState({ width: update_width });
+    }
+  }
+
+  /**
+   * Add event listener
+   */
+  componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions.bind(this));
+  }
+
+  /**
+   * Remove event listener
+   */
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions.bind(this));
+  }
+
+  render() {
+		const offset = this.offsetForScroll();
+		
 		return (
 			<footer>
 				<div className="container--footer">
 					<nav>
 						<ul className="list--footer-nav">
 							<li className="listItem--footer-nav">
-								<Link className="listItem__text--footer-nav listItem--backToTop" to="scrollTo--top" spy={true} smooth={true} duration={500}>
+								<Link className="listItem__text--footer-nav listItem--backToTop" to="scrollTo--top" spy={true} offset={-70} smooth={true} duration={500}>
 
 									<svg role="presentation" viewBox="0 0 33 50" className="footer__uparrow">
 										<polygon className="arrow" points="16.5,1 1,23 32,23 " />
@@ -22,22 +69,22 @@ class Footer extends Component {
 								</Link>
 							</li>
 							<li className="listItem--footer-nav">
-								<Link className="listItem__text--footer-nav" to="scrollTo--welcome" spy={true} smooth={true} duration={500}>
+								<Link className="listItem__text--footer-nav" to="scrollTo--welcome" spy={true} offset={offset} smooth={true} duration={500}>
 									<span className="listItem__underline--footer-nav">About Me</span>
 								</Link>
 							</li>
 							<li className="listItem--footer-nav">
-								<Link className="listItem__text--footer-nav" to="scrollTo--skills" spy={true} smooth={true} duration={500}>
+								<Link className="listItem__text--footer-nav" to="scrollTo--skills" spy={true} offset={offset} smooth={true} duration={500}>
 									<span className="listItem__underline--footer-nav">Skills</span>
 								</Link>
 							</li>
 							<li className="listItem--footer-nav">
-								<Link className="listItem__text--footer-nav" to="scrollTo--work" spy={true} smooth={true} duration={500}>
+								<Link className="listItem__text--footer-nav" to="scrollTo--work" spy={true} offset={offset} smooth={true} duration={500}>
 									<span className="listItem__underline--footer-nav">Examples</span>
 								</Link>
 							</li>
 							<li className="listItem--footer-nav">
-								<Link className="listItem__text--footer-nav" to="scrollTo--contact" spy={true} smooth={true} duration={500}>
+								<Link className="listItem__text--footer-nav" to="scrollTo--contact" spy={true} offset={offset} smooth={true} duration={500}>
 									<span className="listItem__underline--footer-nav">Contact</span>
 								</Link>
 							</li>
