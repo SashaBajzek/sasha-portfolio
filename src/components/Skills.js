@@ -79,7 +79,7 @@ class Skills extends Component {
 								</li>
 								<li>
 									<a className="skill" href="https://web.iit.edu/mediaroom/press-releases/2005/apr/25/tinley-park-high-school-student-wins-28th-international-high">
-										<img className="skills__logo" src="./bridge--Small.jpg" alt="Bridge" />
+										<img className="skills__logo" src="./Bridge--Small.jpg" alt="Bridge" />
 										<p className="skills__name">Model Bridge Building</p>
 									</a>
 								</li>
