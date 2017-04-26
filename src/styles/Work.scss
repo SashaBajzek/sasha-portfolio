@@ -119,19 +119,15 @@
 }
 
 .project__text {
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.6);
 	display: flex;
 	flex-direction: column;
 	height: 200px;
 	justify-content: space-between;
 	padding: 10px;
 	position: absolute;
-	transition: transform .3s ease-out;
-	width: 300px;
-}
-
-.project:hover .project__text {
 	transform: translate(0, -200px);
+	width: 300px;
 }
 
 .project__image--Twitter {
@@ -201,6 +197,16 @@
 
 	.container--work {
 		max-width: $screen-md-min;
+	}
+	
+	.project__text {
+		background-color: rgba(0,0,0,0.7);
+		transform: none;
+		transition: transform .3s ease-out;
+	}
+
+	.project:hover .project__text {
+		transform: translate(0, -200px);
 	}
 	
 }

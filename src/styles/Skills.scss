@@ -50,9 +50,6 @@
 	transition: all 4s ease-out;
 }
 
-.skills__logo:hover, .skill:hover .skills__logo {
-	transform: rotate(360deg) scale(1.5);
-}
 
 .skills__name {
 	color: $blackgrey; 
@@ -73,6 +70,10 @@
 	
 	.list--skills-main {
 		flex-direction: row;
+	}
+	
+	.skills__logo:hover, .skill:hover .skills__logo {
+		transform: rotate(360deg) scale(1.5);
 	}
 	
 }
