@@ -11,12 +11,14 @@
 	max-width: $screen-sm-min - 200px;
 }
 
-.night .section--contact {
+.earth--night .section--contact,
+.space--night .section--contact {
 	background-color: $independence-dark;
 	color: $maize;
 }
 
-.day .section--contact {
+.earth--day .section--contact,
+.space--day .section--contact {
 	background-color: $independence;
 	color: $maize;
 }
@@ -55,6 +57,24 @@
 	height: 35px;
 }
 
+.contact__image--superhero {
+	animation: superhero-flyby 10s infinite linear;
+	display: block;
+	height: 40px;
+	margin: 0 auto;
+}
+
+@keyframes superhero-flyby {
+	0% {transform: translateX(80vw) scale(0.1); transform-origin: center;}
+	40% {transform: translateX(50%) scale(1.3);}
+	42% {transform: rotate(0deg) scale(1.3); transform-origin: center;}
+	44% {transform: rotate(1deg) scale(1.3); transform-origin: center;}
+	46% {transform: rotate(-2deg) scale(1.3); transform-origin: center;}
+	48% {transform: rotate(1deg) scale(1.3); transform-origin: center;}
+	50% {transform: translateX(50%) scale(1.3);}
+	100% {transform: translateX(-80vw) scale(0.1);}
+}
+
 
 
 /* Media Sizes */
@@ -71,6 +91,11 @@
 
 	.contact__image--email {
 		height: 45px;
+	}
+	
+	.contact__image--superhero {
+		animation: superhero-flyby 15s infinite linear;
+		height: 50px;
 	}
 	
 }

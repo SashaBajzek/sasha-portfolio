@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import { Earth } from './svg/Earth';
+import { SaturnSmooth } from './svg/SaturnSmooth'
 import { Moon } from './svg/Moon';
 import { Rocket } from './svg/Rocket';
+import { RocketAlien } from './svg/RocketAlien';
 import { Sun } from './svg/Sun';
+import { Star } from './svg/Star';
+import { Jupiter } from './svg/Jupiter';
 import '../styles/Hero.scss';
 
 class Hero extends Component {
@@ -19,9 +23,11 @@ class Hero extends Component {
 				takeoff: "takeoff"
 		}));
 		
+		setTimeout(()=>{this.props.changePlanet();}, 4000);
+		
 		setTimeout(()=>{this.setState(prevState => ({
 				takeoff: ""
-		}));}, 5000);
+		}));}, 4000);
 	}
 	
 	earthspinAnimation = () => {		
@@ -40,10 +46,22 @@ class Hero extends Component {
 				<div className="container--hero">
 					<h1>Hello World!</h1>
 					<h1>I'm Sasha!</h1>
+			
 					<Earth earthspinAnimation={this.earthspinAnimation} earthspin={this.state.earthspin}/>
+			
+					<SaturnSmooth earthspinAnimation={this.earthspinAnimation} earthspin={this.state.earthspin}/>
+			
 					<Rocket takeoffAnimation={this.takeoffAnimation} takeoff={this.state.takeoff}/>
+			
+					<RocketAlien takeoffAnimation={this.takeoffAnimation} takeoff={this.state.takeoff}/>
+			
 					<Moon changeTimeOfDay={this.props.changeTimeOfDay} />
+			
 					<Sun changeTimeOfDay={this.props.changeTimeOfDay} />
+			
+					<Star changeTimeOfDay={this.props.changeTimeOfDay} />
+			
+					<Jupiter changeTimeOfDay={this.props.changeTimeOfDay} />
 				</div>
 			</div>
 		);

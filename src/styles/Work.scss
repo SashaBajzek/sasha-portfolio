@@ -14,12 +14,12 @@
 	max-width: $screen-xs-min - 50px;
 }
 
-.night .section--work {
+.earth--night .section--work {
 	background-color: $queenblue-dark;
 	color: $maize;
 }
 
-.day .section--work {
+.earth--day .section--work {
 	background-color: $palecerulean-light;
 	color: $queenblue-dark;
 }
@@ -49,11 +49,11 @@
 	width: 120px;
 }
 
-.night .work__resume:hover {
+.earth--night .work__resume:hover {
 	background-color: $palecerulean-light;
 }
 
-.day .work__resume:hover {
+.earth--day .work__resume:hover {
 	background-color: $independence-lighter;
 }
 

@@ -10,12 +10,20 @@
 	max-width: $screen-sm-min - 200px;
 }
 
-.day .section--skills {
+.earth--day .section--skills {
 	background-color: $pistachio;
 }
 
-.night .section--skills {
+.earth--night .section--skills {
 	background-color: $pistachio-dark;
+}
+
+.space--day .section--skills {
+	background-color: $pistachio;
+}
+
+.space--night .section--skills {
+	background-color: $palecerulean-dark;
 }
 
 .list--skills-main {

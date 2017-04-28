@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import '../styles/Contact.scss';
+import {Superhero} from './svg/Superhero';
 
 class Contact extends Component {
 	render() {
 		return (
 			<section id="scrollTo--contact" className="section--contact">
 				<div className="container--contact">
+					<Superhero />
 					<h2 className="section__header">How to reach me</h2>
 					<a className="contact__email" href="mailto:sasha.bajzek@gmail.com">sasha.bajzek@gmail.com</a>
 					<ul className="list--contacts">

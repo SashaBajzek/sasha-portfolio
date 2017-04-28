@@ -6,11 +6,13 @@
 	stroke-miterlimit: 10;
 }
 
-.day .mountain__st0 {
+.earth--day .mountain__st0,
+.space--day .mountain__st0 {
 	fill: $independence;
 }
 
-.night .mountain__st0 {
+.earth--night .mountain__st0,
+.space--night .mountain__st0 {
 	fill: $independence-dark;
 }
 
@@ -18,11 +20,13 @@
 	fill: $clean;
 }
 
-.day .mountain__st2 {
+.earth--day .mountain__st2,
+.space--day .mountain__st2 {
 	fill: $independence;
 }
 
-.night .mountain__st2 {
+.earth--night .mountain__st2,
+.space--night .mountain__st2 {
 	fill: $independence-dark;
 }
 

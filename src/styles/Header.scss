@@ -18,12 +18,20 @@ header {
 	max-width: $screen-sm-min - 50px;
 }
 
-.day header {
+.earth--day header {
 	background-color: $palecerulean-darkest;
 }
 
-.night header {
+.earth--night header {
 	background-color: $queenblue-darkest;
+}
+
+.space--day header {
+	background-color: $independence;
+}
+
+.space--night header {
+	background-color: $independence-darkest;
 }
 
 .header__name {
@@ -104,12 +112,20 @@ header {
 	width: 30px;
 }
 
-.day .header__hamburger {
+.earth--day .header__hamburger {
 	background-color: $palecerulean-darkest;
 }
 
-.night .header__hamburger {
+.earth--night .header__hamburger {
 	background-color: $queenblue-darkest;
+}
+
+.space--day .header__hamburger {
+	background-color: $independence;
+}
+
+.space--night .header__hamburger {
+	background-color: $independence-darkest;
 }
 
 
@@ -214,12 +230,20 @@ header {
 		transition: none;
 	}
 	
-	.day .header__nav {
+	.earth--day .header__nav {
 		background-color: $palecerulean-darkest;
 	}
 	
-	.night .header__nav {
+	.earth--night .header__nav {
 		background-color: $queenblue-darkest;
+	}
+	
+	.space--day .header__nav {
+		background-color: $independence;
+	}
+	
+	.space--night .header__nav {
+		background-color: $independence-darkest
 	}
 	
 	.list--header-nav {

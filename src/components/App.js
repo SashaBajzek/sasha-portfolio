@@ -24,6 +24,7 @@ class App extends Component {
 		super(props);
 		this.state = {
 			timeofday: this.getTimeOfDay(this.hour),
+			planet: "earth",
 			menuStatus: "menuClosed"
 		}		
 	}
@@ -36,6 +37,18 @@ class App extends Component {
 		} else {
 			this.setState(prevState => ({
 				timeofday: "day"
+			}));
+		}
+	}
+	
+	changePlanet = () => {
+		if(this.state.planet === "earth") {
+			this.setState(prevState => ({
+				planet: "space"
+			}));
+		} else {
+			this.setState(prevState => ({
+				planet: "earth"
 			}));
 		}
 	}
@@ -60,9 +73,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className={`App ${this.state.timeofday}`}>
+      <div className={`App ${this.state.planet}--${this.state.timeofday}`}>
 				<Header menuStatus={this.state.menuStatus} toggleHamburger={this.toggleHamburger} closeHamburger={this.closeHamburger} />
-        <Hero changeTimeOfDay={this.changeTimeOfDay} />
+        <Hero changeTimeOfDay={this.changeTimeOfDay} changePlanet={this.changePlanet}/>
 				<Welcome />
 				<Skills />
 				<Work />

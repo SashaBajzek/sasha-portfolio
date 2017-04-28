@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+.saturnGradient {
+	height: 100px;
+}
+
+.saturn-gradient__accent {
+	fill:#F2F2F2;
+}
+
+.saturn-gradient__body--dark {
+	fill:#F27D2F;
+}
+
+.saturn-gradient__body--medium {
+	fill:#F7904B;
+}
+
+.saturn-gradient__body--light {
+	fill:#F9A369;
+}
+
+.saturn-gradient__ring {
+	fill:#78CCCC;
+}

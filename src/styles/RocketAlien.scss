@@ -1,0 +1,74 @@
+@import './variables.scss';
+
+.rocket-alien {
+	height: 200px;
+}
+
+
+
+.rocket-alien__fire--accent {
+	fill:#F9A369;
+}
+
+.rocket-alien__fire--main {
+	fill:#F7904B;
+}
+
+.rocket-alien__rocket--accent {
+	fill: $palecerulean-darker;
+}
+
+.rocket-alien__rocket--window {
+	fill: $palecerulean-lighter;
+}
+
+.rocket-alien__rocket--main {
+	fill: $palecerulean-darker;
+}
+
+.rocket-alien__spots {
+	fill: $palecerulean;
+}
+
+.rocket-alien__body {
+	fill: $pistachio;
+}
+
+.rocket-alien__iris {
+	fill: $pistachio;
+}
+
+.rocket-alien__eye--shadow {
+	fill:#D3EDEC;
+}
+
+.rocket-alien__eye--white {
+	fill:#F4F4F4;
+}
+
+.rocket-alien__teeth {
+	fill:#F4F4F4;
+}
+
+.rocket-alien__mouth {
+	fill:#474747;
+}
+
+.rocket-alien__pupil {
+	fill:#474747;
+}
+
+.rocket-alien__tongue {
+	fill:#E4495C;
+}
+
+.rocket-alien__fire--accent {
+	animation: fire-accent 4s infinite linear;
+}
+
+@keyframes fire-accent {
+	0% {fill:#F9A369;}
+	50% {fill:$maize-dark;}
+	100% {fill:#F9A369;}
+}
+

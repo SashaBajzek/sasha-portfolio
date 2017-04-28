@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+.saturn-jagged {
+	height: 200px;
+}
+
+
+.saturn-jagged__crater {
+	fill:#D83040;
+}
+
+.saturn-jagged__crater--shadow {
+	fill:#C41E32;
+}
+
+.saturn-jagged__body--main {
+	fill:#EA3946;
+}
+
+.saturn-jagged__ring--accent {
+	fill:#F9A369;
+}
+
+.saturn-jagged__ring--main {
+	fill:#F7904B;
+}
+

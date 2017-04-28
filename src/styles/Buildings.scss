@@ -8,7 +8,7 @@
 	fill: $maize;
 }
 
-.day {
+.earth--day {
 	
 	.buildings__main {
 		fill: $independence;
@@ -30,7 +30,50 @@
 }
 
 
-.night {
+.earth--night {
+	
+	.buildings__main {
+		fill: $independence-dark;
+	}
+
+	.buildings__tower--detail {
+		fill: none;
+		stroke: $independence-dark;
+		stroke-width: 0.25;
+		stroke-miterlimit: 10;
+	}
+
+	.buildings__tower {
+		fill: none;
+		stroke: $independence-dark;
+		stroke-miterlimit: 10;
+	}
+	
+}
+
+.space--day {
+	
+	.buildings__main {
+		fill: $independence;
+	}
+
+	.buildings__tower--detail {
+		fill: none;
+		stroke: $independence;
+		stroke-width: 0.25;
+		stroke-miterlimit: 10;
+	}
+
+	.buildings__tower {
+		fill: none;
+		stroke: $independence;
+		stroke-miterlimit: 10;
+	}
+
+}
+
+
+.space--night {
 	
 	.buildings__main {
 		fill: $independence-dark;

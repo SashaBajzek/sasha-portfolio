@@ -1,11 +1,19 @@
 @import './variables.scss';
 
-.day .vine1 {
+.earth--day .vine1 {
 	fill: $pistachio;
 }
 
-.night .vine1 {
+.earth--night .vine1 {
 	fill: $pistachio-dark;
+}
+
+.space--day .vine1 {
+	fill: $pistachio;
+}
+
+.space--night .vine1 {
+	fill: $palecerulean-dark;
 }
 
 .vine1 {
