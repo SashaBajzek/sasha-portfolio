@@ -57,6 +57,14 @@
 	background-color: $independence-lighter;
 }
 
+.space--night .work__resume:hover {
+	background-color: $palecerulean-light;
+}
+
+.space--day .work__resume:hover {
+	background-color: $independence-lighter;
+}
+
 .work__resume-text {
 	margin: 0;
 	transition: transform 0s ease-out;
@@ -159,17 +167,19 @@
 }
 
 .work__image--buildings {
-	bottom: 0;
+	bottom: -1px;
+	height: 53px;
 	left: 0;
 	position: absolute;
-	width: 80%;
+	width: 320px;
 }
 
 .work__image--mountain {
 	bottom: 0;
+	height: 105px;
 	position: absolute;
 	right: 10px;
-	width: 35%;
+	width: 289px;
 	visibility: hidden;
 }
 
@@ -180,8 +190,10 @@
 	.container--work {
 		max-width: $screen-sm-min;
 	}
+	
 	.work__image--buildings {
-		width: 45%;
+		height: 58px;
+		width: 350px;
 	}
 
 	.work__image--mountain {
@@ -209,6 +221,16 @@
 		transform: translate(0, -200px);
 	}
 	
+	.work__image--buildings {
+		height: 70px;
+		width: 420px;
+	}
+	
+	.work__image--mountain {
+		height: 145px;
+		width: 387px;
+	}
+	
 }
 
 /* XL Desktop Screen Size */
@@ -219,11 +241,13 @@
 	}
 	
 	.work__image--buildings {
-		width: 35%;
+		height: 80px;
+		width: 475px;
 	}
 
 	.work__image--mountain {
-		width: 25%;
+		height: 163px;
+		width: 432px;
 	}
 	
 	

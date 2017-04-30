@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Sunflower } from './svg/Sunflower';
+import { SunflowerPetals } from './svg/SunflowerPetals';
 import { Tulips } from './svg/Tulips';
 import { Vine1 } from './svg/Vine1';
 import { Vine2 } from './svg/Vine2';
@@ -21,7 +22,9 @@ class Welcome extends Component {
 					<Tulips className="welcome__image--tulips-2" />
 					<Tulips className="welcome__image--tulips-3" />
 					<Sunflower className="welcome__image--sunflower-1" />
+					<SunflowerPetals className="welcome__image--sunflower-petals-1" />
 					<Sunflower className="welcome__image--sunflower-2" />
+					<SunflowerPetals className="welcome__image--sunflower-petals-2" />
 					<Alien className="alien welcome__image--alien-1" />
 					<Alien className="alien welcome__image--alien-2" />
 					<Alien className="alien welcome__image--alien-3" />

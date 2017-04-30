@@ -85,6 +85,7 @@
 	position: absolute;
 	right: 5%;
 	top: 90px;
+	width: 47px;
 }
 
 .hero__image--rocket-alien {
@@ -94,7 +95,8 @@
 	margin-right: auto;
 	position: absolute;
 	right: 1%;
-	top: 90px;
+	top: 125px;
+	width: 90px;
 }
 
 @keyframes rocket-wiggle {
@@ -164,6 +166,7 @@
 	position: absolute;
 	top: 70px;
 	transition: transform 2s ease-in;
+	width: 60px;
 }
 
 @keyframes sunmoon-wiggle {
@@ -213,12 +216,14 @@
 		height: 125px;
 		right: 100px;
 		top: 50px;
+		width: 58px;
 	}
 	
 	.hero__image--rocket-alien {
 		height: 60px;
 		right: 40px;
 		top: 70px;
+		width: 130px;
 	}
 	
 	.hero__image--moon,
@@ -228,6 +233,7 @@
 		height: 90px;
 		left: 80px;
 		top: 50px;
+		width: 90px;
 	}
 	
 }
@@ -247,12 +253,14 @@
 		height: 150px;
 		right: 100px;
 		top: 50px;
+		width: 70px;
 	}
 	
 	.hero__image--rocket-alien {
 		height: 80px;
 		right: 30px;
 		top: 80px;
+		width: 172px;
 	}
 	
 	.hero__image--moon,
@@ -262,6 +270,7 @@
 		height: 100px;
 		left: 100px;
 		top: 50px;
+		width: 100px;
 	}
 	
 }
@@ -279,7 +288,7 @@
 	}
 	
 	.hero__image--rocket-alien {
-		right: 15%;
+		right: 8%;
 	}
 	
 	.hero__image--moon,

@@ -8,7 +8,7 @@ class Work extends Component {
 	render() {
 		return (
 			<section className="section--work">
-				<div className="container--welcome">
+				<div className="container--work">
 					<h2 className="section__header">Examples of my work</h2>
 					<a id="scrollTo--work" href="./SashaBajzekResume.pdf" download className="work__resume"><p className="work__resume-text">Resum&eacute; Click Here</p></a>
 					<ul className="list--projects">
