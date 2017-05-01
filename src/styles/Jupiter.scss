@@ -1,19 +1,13 @@
 @import './variables.scss';
 
-.jupiter {
-	height: 200px;
-}
-
-
 .jupiter--medium {
-	fill:#F7904B;
+	fill: $palecerulean-dark;
 }
 
 .jupiter--light {
-	fill:#F9A369;
+	fill: $pistachio-light;
 }
 
 .jupiter--dark {
-	fill:#F27D2F;
+	fill: $queenblue;
 }
-

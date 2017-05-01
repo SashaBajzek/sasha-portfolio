@@ -5,7 +5,7 @@ import { Moon } from './svg/Moon';
 import { Rocket } from './svg/Rocket';
 import { RocketAlien } from './svg/RocketAlien';
 import { Sun } from './svg/Sun';
-import { Star } from './svg/Star';
+import { EarthMinimal } from './svg/EarthMinimal';
 import { Jupiter } from './svg/Jupiter';
 import '../styles/Hero.scss';
 
@@ -59,7 +59,7 @@ class Hero extends Component {
 			
 					<Sun changeTimeOfDay={this.props.changeTimeOfDay} />
 			
-					<Star changeTimeOfDay={this.props.changeTimeOfDay} />
+					<EarthMinimal changeTimeOfDay={this.props.changeTimeOfDay} />
 			
 					<Jupiter changeTimeOfDay={this.props.changeTimeOfDay} />
 				</div>

@@ -21,7 +21,7 @@
 }
 
 .space--day .section--hero {
-	background-color: $independence-lighter;
+	background-color: $independence-lightest;
 	color: $queenblue-darker;
 }
 
@@ -96,6 +96,7 @@
 	position: absolute;
 	right: 1%;
 	top: 125px;
+ transition: transform 2s ease-in;
 	width: 90px;
 }
 
@@ -111,7 +112,17 @@
 
 .hero__image--rocket:hover,
 .hero__image--rocket-alien:hover {
+	animation: rocket-hover 0.5s linear;
 	cursor: pointer;
+}
+
+
+@keyframes rocket-hover {
+	0% {transform: rotate(0deg); transform-origin: center;}
+	25% {transform: rotate(1deg); transform-origin: center;}
+	50% {transform: rotate(-2deg); transform-origin: center;}
+	75% {transform: rotate(1deg); transform-origin: center;}
+	100% {transform: rotate(0deg); transform-origin: center;}
 }
 
 .hero__image--rocket.takeoff {
@@ -141,25 +152,24 @@
 }
 
 .earth--day .hero__image--moon,
-.earth--day .hero__image--star,
+.earth--day .hero__image--earth-minimal,
 .earth--day .hero__image--jupiter,
 .earth--night .hero__image--sun,
-.earth--night .hero__image--star,
+.earth--night .hero__image--earth-minimal,
 .earth--night .hero__image--jupiter,
 .space--day .hero__image--moon,
 .space--day .hero__image--sun,
-.space--day .hero__image--star,
+.space--day .hero__image--jupiter,
 .space--night .hero__image--sun,
 .space--night .hero__image--moon,
-.space--night .hero__image--jupiter
+.space--night .hero__image--earth-minimal
 {
 	visibility: hidden;
 }
 
 .hero__image--moon,
 .hero__image--sun,
-.hero__image--jupiter,
-.hero__image--star {
+.hero__image--jupiter {
 	animation: sunmoon-wiggle 8s infinite ease-out;
 	height: 60px;
 	left: 2%;
@@ -167,6 +177,16 @@
 	top: 70px;
 	transition: transform 2s ease-in;
 	width: 60px;
+}
+
+.hero__image--earth-minimal {
+	animation: sunmoon-wiggle 8s infinite ease-out;
+	height: 55px;
+	left: 2%;
+	position: absolute;
+	top: 70px;
+	transition: transform 2s ease-in;
+	width: 55px;
 }
 
 @keyframes sunmoon-wiggle {
@@ -181,7 +201,7 @@
 
 .hero__image--moon:hover, 
 .hero__image--sun:hover,
-.hero__image--star:hover,
+.hero__image--earth-minimal:hover,
 .hero__image--jupiter:hover {
 	animation: sunmoon-hover 1s 1 ease-out;
 	cursor: pointer;
@@ -228,12 +248,18 @@
 	
 	.hero__image--moon,
 	.hero__image--sun,
-	.hero__image--star,
 	.hero__image--jupiter {
 		height: 90px;
 		left: 80px;
 		top: 50px;
 		width: 90px;
+	}
+	
+	.hero__image--earth-minimal {
+		height: 85px;
+		left: 80px;
+		top: 50px;
+		width: 85px;
 	}
 	
 }
@@ -265,12 +291,18 @@
 	
 	.hero__image--moon,
 	.hero__image--sun,
-	.hero__image--star,
 	.hero__image--jupiter {
 		height: 100px;
 		left: 100px;
 		top: 50px;
 		width: 100px;
+	}
+	
+	.hero__image--earth-minimal {
+		height: 95px;
+		left: 100px;
+		top: 50px;
+		width: 95px;
 	}
 	
 }
@@ -293,7 +325,7 @@
 	
 	.hero__image--moon,
 	.hero__image--sun,
-	.hero__image--star,
+	.hero__image--earth-minimal,
 	.hero__image--jupiter {
 		left: 15%;
 	}
