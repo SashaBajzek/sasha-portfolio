@@ -19,8 +19,8 @@ class Skills extends Component {
 								</li>
 								<li>
 									<a className="skill" href="http://redux.js.org/">
-										<img className="skills__logo" src="./redux.svg" alt="Redux Logo" />
 										<p className="skills__name" >Redux</p>
+										<img className="skills__logo" src="./redux.svg" alt="Redux Logo" />
 									</a>
 								</li>
 								<li>
@@ -31,8 +31,8 @@ class Skills extends Component {
 								</li>
 								<li>
 									<a className="skill" href="https://jquery.com/" >
-										<img className="skills__logo" src="./jquery.svg" alt="JQuery Logo" />
 										<p className="skills__name" >JQuery</p>
+										<img className="skills__logo" src="./jquery.svg" alt="JQuery Logo" />
 									</a>
 								</li>
 								<li>
@@ -43,8 +43,8 @@ class Skills extends Component {
 								</li>
 								<li>
 									<a className="skill" href="http://sass-lang.com/">
-										<img className="skills__logo" src="./sass.svg" alt="Sass Logo" />
 										<p className="skills__name" >Sass</p>
+										<img className="skills__logo" src="./sass.svg" alt="Sass Logo" />
 									</a>
 								</li>
 								<li>
@@ -67,8 +67,8 @@ class Skills extends Component {
 								</li>
 								<li>
 									<a className="skill" href="https://en.wikipedia.org/wiki/Gardening">
-										<img className="skills__logo" src="./garden.svg" alt="Gardening Gloves" />
 										<p className="skills__name">Gardening</p>
+										<img className="skills__logo" src="./garden.svg" alt="Gardening Gloves" />
 									</a>
 								</li>
 								<li>
@@ -79,8 +79,8 @@ class Skills extends Component {
 								</li>
 								<li>
 									<a className="skill" href="https://web.iit.edu/mediaroom/press-releases/2005/apr/25/tinley-park-high-school-student-wins-28th-international-high">
-										<img className="skills__logo" src="./Bridge--Small.jpg" alt="Bridge" />
 										<p className="skills__name">Model Bridge Building</p>
+										<img className="skills__logo" src="./Bridge--Small.jpg" alt="Bridge" />
 									</a>
 								</li>
 							</ul>
@@ -97,8 +97,8 @@ class Skills extends Component {
 								</li>
 								<li>
 									<a className="skill" href="https://www.fhwa.dot.gov/bridge/inspection/">
-										<img className="skills__logo" src="./magnifying_glass.svg" alt="Magnifying Glass" />
 										<p className="skills__name">Bridge Inspecting</p>
+										<img className="skills__logo" src="./magnifying_glass.svg" alt="Magnifying Glass" />
 									</a>
 								</li>
 								<li>
@@ -109,8 +109,8 @@ class Skills extends Component {
 								</li>
 								<li>
 									<a className="skill" href="https://firearmtraining.nra.org/become-an-instructor/">
-										<img className="skills__logo" src="./target.svg" alt="Target" />
 										<p className="skills__name">Pistol Instructor</p>
+										<img className="skills__logo" src="./target.svg" alt="Target" />
 									</a>
 								</li>
 								<li>
@@ -121,8 +121,8 @@ class Skills extends Component {
 								</li>
 								<li>
 									<a className="skill" href="https://en.wikipedia.org/wiki/Camping">
-										<img className="skills__logo" src="./camping.svg" alt="Tent" />
 										<p className="skills__name">Camping</p>
+										<img className="skills__logo" src="./camping.svg" alt="Tent" />
 									</a>
 								</li>
 							</ul>

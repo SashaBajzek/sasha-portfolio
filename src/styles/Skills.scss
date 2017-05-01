@@ -58,13 +58,28 @@
 	transition: all 4s ease-out;
 }
 
-
 .skills__name {
 	color: $blackgrey; 
 	display: inline-block;
 	margin: 0;
 	padding: 5px 10px 5px;
 	line-height: 30px;
+}
+
+.list--skills-sub li:nth-child(odd) .skills__name {
+	order: 1;
+}
+
+.list--skills-sub li:nth-child(odd) .skills__logo {
+	order: 2;
+}
+
+.list--skills-sub li:nth-child(even) .skills__name {
+	order: 2;
+}
+
+.list--skills-sub li:nth-child(even) .skills__logo {
+	order: 1;
 }
 
 
