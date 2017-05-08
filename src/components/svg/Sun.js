@@ -4,7 +4,7 @@ import '../../styles/Sun.scss';
 export class Sun extends Component {
 	render() {
 		return (
-			<svg role="presentation" onClick={this.props.changeTimeOfDay} className="hero__image--sun" viewBox="0 0 87 79.2">
+			<svg role="presentation button" tabIndex="0" onClick={this.props.changeTimeOfDay} onKeyPress={this.props.changeTimeOfDay} className="hero__image--sun" viewBox="0 0 87 79.2">
 			<path className="sun--light" d="M25.4,44.1c0.1-0.1,0.1-0.2,0.1-0.4c0,0,0-0.1,0-0.1c0-0.1-0.1-0.2-0.2-0.2l-21-7l21.3-5.3
 				c0.1,0,0.3-0.1,0.3-0.2c0.1-0.1,0.1-0.3,0-0.4c0,0-9.6-16.2-9.6-16.2L35,23.2c0.1,0.1,0.2,0.1,0.4,0s0.2-0.2,0.2-0.3l3.5-21.3
 				L46.2,22c0,0,0,0,0,0c0.1,0.1,0.2,0.2,0.3,0.2c0.1,0,0.3,0,0.4-0.1L62.1,4.3l-4.7,23.5c0,0.1,0,0.2,0,0.3c0,0,0,0.1,0.1,0.1

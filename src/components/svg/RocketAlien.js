@@ -4,7 +4,7 @@ import '../../styles/RocketAlien.scss';
 export class RocketAlien extends Component {
 	render() {
 		return (
-			<svg role="presentation" viewBox="0 0 220.6 102.6" onClick={this.props.takeoffAnimation} className={`hero__image--rocket-alien ${this.props.takeoff}`}>
+			<svg role="presentation button" tabIndex="0" viewBox="0 0 220.6 102.6" onClick={this.props.takeoffAnimation} onKeyPress={this.props.takeoffAnimation} className={`hero__image--rocket-alien ${this.props.takeoff}`}>
 			<path className="rocket-alien__fire--accent" d="M143.9,41.8c3.9-7.5,12.5-11.4,20.7-11.7c2.1-0.1,4.3-0.2,6.3,0.2c2,0.3,4.2,0.5,6.1,1.3c0.5,0.2,1,0.5,1.5,0.7
 				c0.5,0.3,0.2,0.7-0.1,1c-0.7,0.6-1.8,0.9-2.6,1.1c-0.4,0.1-1.3,0-1.6,0.3c-1,0.7,0.8,0.9,1.2,1c1.1,0.2,2.1,0.5,3.2,0.8
 				c4.1,1.2,8.1,2.9,12,4.5c1.8,0.8,3.6,1.6,5.4,2.5c1.8,0.9,4.1,1.8,5.6,3.2c0.2,0.2,0.3,0.3,0.5,0.5c-1.9,0.8-3.9,1.3-6,1.7

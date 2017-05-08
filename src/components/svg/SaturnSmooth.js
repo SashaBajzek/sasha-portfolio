@@ -4,7 +4,7 @@ import '../../styles/SaturnSmooth.scss';
 export class SaturnSmooth extends Component {
 	render() {
 		return (
-			<svg role="presentation" viewBox="0 0 209.7 120" onClick={this.props.earthspinAnimation} className={`hero__image--saturn-smooth ${this.props.earthspin}`}>
+			<svg role="presentation button" viewBox="0 0 209.7 120" onClick={this.props.earthspinAnimation} className={`hero__image--saturn-smooth ${this.props.earthspin}`}>
 			<circle className="saturn-smooth__crater" cx="102.4" cy="59.9" r="59"/>
 			<path className="saturn-smooth__body--main" d="M74,8.2c-6.8,3.7-12.5,8.5-17.1,14.2c-1.7,12.3,0.4,25.2,6.8,36.9c15.9,29.1,51.5,39.1,80.6,23.1
 				c5.8-3.2,11.8-6.6,16-11.1c2.6-13.1,0.7-27.1-6.2-39.7C138.5,3,102.6-7.5,74,8.2z M75.2,54.2c-2.3,1.3-5.2,0.4-6.4-1.9

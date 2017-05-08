@@ -57,7 +57,7 @@ class Footer extends Component {
 					<nav>
 						<ul className="list--footer-nav">
 							<li className="listItem--footer-nav">
-								<Link className="listItem__text--footer-nav listItem--backToTop" to="scrollTo--top" spy={true} offset={-70} smooth={true} duration={500}>
+								<Link className="listItem__text--footer-nav listItem--backToTop" to="scrollTo--top" spy={true} offset={-70} smooth={true} duration={500} href="#making-focusable">
 
 									<svg role="presentation" viewBox="0 0 33 50" className="footer__uparrow">
 										<polygon className="arrow" points="16.5,1 1,23 32,23 " />
@@ -69,22 +69,22 @@ class Footer extends Component {
 								</Link>
 							</li>
 							<li className="listItem--footer-nav">
-								<Link className="listItem__text--footer-nav" to="scrollTo--welcome" spy={true} offset={offset} smooth={true} duration={500}>
+								<Link className="listItem__text--footer-nav" to="scrollTo--welcome" spy={true} offset={offset} smooth={true} duration={500} href="#making-focusable">
 									<span className="listItem__underline--footer-nav">About Me</span>
 								</Link>
 							</li>
 							<li className="listItem--footer-nav">
-								<Link className="listItem__text--footer-nav" to="scrollTo--skills" spy={true} offset={offset} smooth={true} duration={500}>
+								<Link className="listItem__text--footer-nav" to="scrollTo--skills" spy={true} offset={offset} smooth={true} duration={500}  href="#making-focusable">
 									<span className="listItem__underline--footer-nav">Skills</span>
 								</Link>
 							</li>
 							<li className="listItem--footer-nav">
-								<Link className="listItem__text--footer-nav" to="scrollTo--work" spy={true} offset={offset} smooth={true} duration={500}>
+								<Link className="listItem__text--footer-nav" to="scrollTo--work" spy={true} offset={offset} smooth={true} duration={500}  href="#making-focusable">
 									<span className="listItem__underline--footer-nav">Examples</span>
 								</Link>
 							</li>
 							<li className="listItem--footer-nav">
-								<Link className="listItem__text--footer-nav" to="scrollTo--contact" spy={true} offset={offset} smooth={true} duration={500}>
+								<Link className="listItem__text--footer-nav" to="scrollTo--contact" spy={true} offset={offset} smooth={true} duration={500} href="#making-focusable">
 									<span className="listItem__underline--footer-nav">Contact</span>
 								</Link>
 							</li>

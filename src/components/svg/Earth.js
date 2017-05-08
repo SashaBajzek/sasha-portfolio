@@ -4,7 +4,7 @@ import '../../styles/Earth.scss';
 export class Earth extends Component {
 	render() {
 		return (
-			<svg role="presentation" onClick={this.props.earthspinAnimation} className={`hero__image--earth ${this.props.earthspin}`} viewBox="0 0 157.8 155.3">
+			<svg role="presentation button" onClick={this.props.earthspinAnimation} className={`hero__image--earth ${this.props.earthspin}`} viewBox="0 0 157.8 155.3">
 			<ellipse className="earth__ocean--dark" cx="78.8" cy="77.7" rx="77.9" ry="76.8"/>
 			<g>
 				<path className="earth__ocean--light" d="M78.8,0.7c-18.5,0-35.5,6.4-48.8,17c-12.5,13.8-20.1,32-20.1,52c0,42.9,34.9,77.6,77.9,77.6

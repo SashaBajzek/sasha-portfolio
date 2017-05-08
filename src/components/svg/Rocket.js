@@ -4,7 +4,7 @@ import '../../styles/Rocket.scss';
 export class Rocket extends Component {
 	render() {
 		return (
-			<svg role="presentation" onClick={this.props.takeoffAnimation} className={`hero__image--rocket ${this.props.takeoff}`} viewBox="0 0 119 255">
+			<svg role="presentation button" tabIndex="0" onClick={this.props.takeoffAnimation} onKeyPress={this.props.takeoffAnimation} className={`hero__image--rocket ${this.props.takeoff}`} viewBox="0 0 119 255">
 			<path className="rocket__fire--accent" d="M74.2,166.3c8,2.7,13.2,10.5,14.8,18.6c0.4,2.1,0.9,4.2,0.8,6.3c0,2,0.2,4.2-0.3,6.2c-0.1,0.5-0.3,1.1-0.5,1.6
 				c-0.2,0.5-0.7,0.3-1,0.1c-0.7-0.6-1.2-1.6-1.5-2.4c-0.2-0.4-0.2-1.3-0.5-1.5c-0.8-0.9-0.8,0.9-0.8,1.3c0,1.1-0.2,2.2-0.3,3.3
 				c-0.5,4.2-1.6,8.5-2.5,12.6c-0.5,1.9-1,3.8-1.6,5.7c-0.6,1.9-1.1,4.3-2.3,6c-0.2,0.2-0.2,0.3-0.4,0.6c-1.1-1.7-1.9-3.6-2.6-5.7

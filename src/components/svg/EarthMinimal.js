@@ -4,7 +4,7 @@ import '../../styles/EarthMinimal.scss';
 export class EarthMinimal extends Component {
 	render() {
 		return (
-			<svg role="presentation" viewBox="0 0 64.2 64.2" onClick={this.props.changeTimeOfDay} className="hero__image--earth-minimal">
+			<svg role="presentation button" tabIndex="0" viewBox="0 0 64.2 64.2" onClick={this.props.changeTimeOfDay} onKeyPress={this.props.changeTimeOfDay} className="hero__image--earth-minimal">
 			<path className="earth-minimal__land--accent" d="M31.6,63.2C14.1,63.2,0,49,0,31.6C0,14.1,14.2,0,31.6,0s31.6,14.2,31.6,31.6C63.3,49.1,49.1,63.2,31.6,63.2z"/>
 			<path className="earth-minimal__land--main" d="M32.1,0C14.4,0,0,14.4,0,32.1s14.4,32.1,32.1,32.1s32.1-14.4,32.1-32.1C64.1,14.3,49.8,0,32.1,0z M21.2,59.6
 				c-7.9-3-13.6-9.3-16.3-16.8c3.6,6.5,9.7,12,17.4,15c6.6,2.5,13.4,3,19.7,1.6C35.5,62,28.2,62.3,21.2,59.6z M35.2,4.1

@@ -4,7 +4,7 @@ import '../../styles/Moon.scss';
 export class Moon extends Component {
 	render() {
 		return (
-			<svg role="presentation" onClick={this.props.changeTimeOfDay} className="hero__image--moon" viewBox="0 0 145 143">
+			<svg role="presentation button" tabIndex="0" onClick={this.props.changeTimeOfDay} onKeyPress={this.props.changeTimeOfDay} className="hero__image--moon" viewBox="0 0 145 143">
 				<circle className="moon__st0" cx="71.9" cy="72.4" r="64.8"/>
 				<path className="moon__st1" d="M51.5,133.5c6.6,2.2,13.5,3.3,20.5,3.3c35.5,0,64.3-28.9,64.3-64.3c0-17.4-6.8-33.7-19.3-45.9
 					c-6-1.8-12.2-2.7-18.4-2.7c-35.8,0-64.9,29.1-64.9,64.9C33.6,105.5,40,121.4,51.5,133.5z M98.4,103.1c-6.1,0-11.1,5-11.1,11.1

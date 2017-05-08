@@ -4,7 +4,7 @@ import '../../styles/Jupiter.scss';
 export class Jupiter extends Component {
 	render() {
 		return (
-			<svg role="presentation" viewBox="0 0 52.3 52.2" onClick={this.props.changeTimeOfDay} className="hero__image--jupiter" >
+			<svg role="presentation button" tabIndex="0" viewBox="0 0 52.3 52.2" onClick={this.props.changeTimeOfDay} onKeyPress={this.props.changeTimeOfDay} className="hero__image--jupiter" >
 			<circle className="jupiter--medium" cx="26.2" cy="26.1" r="26.1"/>
 			<path className="jupiter--light" d="M49,13.6C42.1,0.9,26.2-3.7,13.6,3.2C12.1,4,10.7,5,9.4,6.1c-5.9,8.1-7,19.2-1.8,28.6
 				C14.7,47.6,31,52.3,44,45.2l0,0C52.5,37.2,54.9,24.2,49,13.6z M18.6,4.7c1.5,0,2.8,0.8,2.8,1.8s-1.3,1.8-2.8,1.8s-2.8-0.8-2.8-1.8

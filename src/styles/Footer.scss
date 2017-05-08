@@ -48,16 +48,19 @@ footer {
 	justify-content: center;
 }
 
-.listItem__text--footer-nav:hover {
+.listItem__text--footer-nav:hover,
+.listItem__text--footer-nav:focus {
 	color: $maize;
 	cursor: pointer;
+	outline: none;
 }
 
 .listItem__underline--footer-nav {
 	border-bottom: solid transparent 2px;
 }
 
-.listItem__text--footer-nav:hover .listItem__underline--footer-nav {
+.listItem__text--footer-nav:hover .listItem__underline--footer-nav,
+.listItem__text--footer-nav:focus .listItem__underline--footer-nav {
 	border-bottom: solid $maize 2px;
 }
 
@@ -72,7 +75,8 @@ footer {
 	fill: $clean;
 }
 
-.listItem__text--footer-nav:hover .arrow {
+.listItem__text--footer-nav:hover .arrow,
+.listItem__text--footer-nav:focus .arrow {
 	fill: $maize;
 }
 

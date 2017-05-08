@@ -84,16 +84,19 @@ header {
 	text-align: center;
 }
 
-.listItem__text--header-nav:hover {
+.listItem__text--header-nav:hover,
+.listItem__text--header-nav:focus {
 	color: $maize;
 	cursor: pointer;
+	outline: none;
 }
 
 .listItem__underline--header-nav {
 	border-bottom: solid transparent 2px;
 }
 
-.listItem__text--header-nav:hover .listItem__underline--header-nav {
+.listItem__text--header-nav:hover .listItem__underline--header-nav,
+.listItem__text--header-nav:focus .listItem__underline--header-nav {
 	border-bottom: solid $maize 2px;
 }
 
@@ -141,7 +144,7 @@ header {
 		content: "";
 		height: 3px;
 		left: 0px;
-		position: absolute;
+		position: absolute;		
 		top: 7px;
 		width: 100%;
 	}
@@ -157,7 +160,9 @@ header {
 	}
 
 	.header__hamburger:hover::before,
-	.header__hamburger:hover::after {
+	.header__hamburger:focus::before,
+	.header__hamburger:hover::after,
+	.header__hamburger:focus::after {
 		background: $maize;
 		transition: transform 0.25s, background .5s;
 	}	
@@ -190,13 +195,16 @@ header {
 		width: 100%;	
 	}
 
-	.header__hamburger:hover {
+	.header__hamburger:hover,
+	.header__hamburger:focus {
 		border-color: $maize;
 		transition: border-color .5s, background .5s;
 	}
 
 	.header__hamburger:hover::before,
-	.header__hamburger:hover::after {
+	.header__hamburger:focus::before,
+	.header__hamburger:hover::after,
+	.header__hamburger:focus::after {
 		background: $maize;
 		transition: background .5s;
 	}

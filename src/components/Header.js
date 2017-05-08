@@ -55,26 +55,26 @@ export default class Header extends Component {
       <header className={this.props.menuStatus}>
 				<div className="container--header">
 					<h1 className="header__name">Sasha Bajzek</h1>
-					<button onClick={this.props.toggleHamburger} className="header__hamburger"></button>
+					<button role="button" onClick={this.props.toggleHamburger} className="header__hamburger" tabIndex="0"></button>
 					<nav className="header__nav">
 						<ul className="list--header-nav">
-							<li className="listItem--header-nav">
-								<Link className="listItem__text--header-nav" to="scrollTo--welcome" spy={true} offset={offset} smooth={true} duration={500} onClick={this.props.closeHamburger}>
+							<li className="listItem--header-nav" >
+								<Link className="listItem__text--header-nav" to="scrollTo--welcome" spy={true} offset={offset} smooth={true} duration={500} onClick={this.props.closeHamburger} href="#scrollTo--welcome">
 									<span className="listItem__underline--header-nav">About Me</span>
 								</Link>
 							</li>
 							<li className="listItem--header-nav">
-								<Link className="listItem__text--header-nav" to="scrollTo--skills" spy={true} offset={offset} smooth={true} duration={500} onClick={this.props.closeHamburger}>
+								<Link className="listItem__text--header-nav" to="scrollTo--skills" spy={true} offset={offset} smooth={true} duration={500} onClick={this.props.closeHamburger} href="#scrollTo--skills">
 									<span className="listItem__underline--header-nav">Skills</span>
 								</Link>
 							</li>
 							<li className="listItem--header-nav">
-								<Link className="listItem__text--header-nav" to="scrollTo--work" spy={true} offset={offset} smooth={true} duration={500} onClick={this.props.closeHamburger}>
+								<Link className="listItem__text--header-nav" to="scrollTo--work" spy={true} offset={offset} smooth={true} duration={500} onClick={this.props.closeHamburger} href="#scrollTo--work">
 									<span className="listItem__underline--header-nav">Examples</span>
 								</Link>
 							</li>
 							<li className="listItem--header-nav">
-								<Link className="listItem__text--header-nav" to="scrollTo--contact" spy={true} offset={offset} smooth={true} duration={500} onClick={this.props.closeHamburger}>
+								<Link className="listItem__text--header-nav" to="scrollTo--contact" spy={true} offset={offset} smooth={true} duration={500} onClick={this.props.closeHamburger} href="#scrollTo--contact">
 									<span className="listItem__underline--header-nav">Contact</span>
 								</Link>
 							</li>
