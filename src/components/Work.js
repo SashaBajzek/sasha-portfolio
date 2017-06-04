@@ -16,7 +16,7 @@ class Work extends Component {
 
 						<ProjectBox project__name="Haiku" project__heading="Haiku For You" project__site="https://haiku.sashabajzek.com/" project__description="A React and Redux front end combined with a Rails API backend to create a site for poetry enthusiasts."/>
 
-						<ProjectBox project__name="Spectrum" project__heading="Spectrum Technology Group" project__site="https://sashabajzek.github.io/SpectrumTechnologyGroup/" project__description="A professional, mobile friendly website using React.  Utilizes BEM syntax to keep CSS clear."/>
+						<ProjectBox project__name="Spectrum" project__heading="Spectrum Technology Group" project__site="https://spectrum.sashabajzek.com/" project__description="A professional, mobile friendly website using React.  Utilizes BEM syntax to keep CSS clear."/>
 
 						<ProjectBox project__name="Calgary" project__heading="Southwest Calgary Ring Road" project__site="http://www.swcrrproject.com/" project__description="Designed the box girders, deck, approach slabs, and wingwalls for Bridge 9, a 29m single span, integral abutment bridge."/>
 

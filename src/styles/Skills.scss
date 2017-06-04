@@ -41,7 +41,7 @@
 .list--skills-sub {
 	margin: 0 auto;
 	padding: 0;
-	width: 230px;
+	width: 240px;
 }
 
 .skill {
@@ -50,6 +50,10 @@
 	display: flex;
 	justify-content: center;
 	transition: all 4s ease-out;
+}
+
+.skill:focus {
+	outline: none;
 }
 
 .skills__logo {
@@ -64,6 +68,11 @@
 	margin: 0;
 	padding: 5px 10px 5px;
 	line-height: 30px;
+}
+
+.skill:hover .skills__name,
+.skill:focus .skills__name {
+	font-weight: 600;
 }
 
 .list--skills-sub li:nth-child(odd) .skills__name {
@@ -95,10 +104,13 @@
 		flex-direction: row;
 	}
 	
-	.skills__logo:hover, .skill:hover .skills__logo {
+	.skills__logo:hover, 
+	.skill:hover .skills__logo,
+	.skills__logo:focus, 
+	.skill:focus .skills__logo {
 		transform: rotate(360deg) scale(1.5);
 	}
-	
+
 }
 
 /* Desktop Screen Size */

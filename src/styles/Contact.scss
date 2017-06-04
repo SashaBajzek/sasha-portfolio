@@ -26,12 +26,20 @@
 .contact__email {
 	color: white;
 	display: block;
+	margin: 0 auto;
 	padding: 15px;
 	text-align: center;
+	width: 300px;
 }
 
-.contact__email:hover {
+.contact__email:hover,
+.contact__email:focus {			
 	color: $maize;
+}
+
+.contact__email:focus {			
+	outline: none;
+	box-shadow: 0 0 10px 5px $maize;
 }
 
 .list--contacts {
@@ -45,8 +53,15 @@
 	height: 40px;
 }
 
-.contact__image:hover {
+.contact:hover,
+.contact:focus {
+	outline: none;
+}
+
+.contact:hover .contact__image,
+.contact:focus .contact__image {
 	box-shadow: 0 0 10px 5px $maize;
+	outline: none;
 }
 
 .contact__image--github {

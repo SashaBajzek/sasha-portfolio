@@ -40,7 +40,6 @@
 	left: 0;
 	line-height: 110px;
 	margin: 0 auto;
-	outline: none;
 	overflow: hidden;
 	position: absolute;
 	right: 0;
@@ -49,20 +48,34 @@
 	width: 120px;
 }
 
-.earth--night .work__resume:hover {
+.earth--night .work__resume:hover,
+.earth--night .work__resume:focus,
+.space--night .work__resume:hover,
+.space--night .work__resume:focus {
 	background-color: $palecerulean-light;
 }
 
-.earth--day .work__resume:hover {
+.earth--night .work__resume:hover,
+.space--night .work__resume:hover,
+.earth--night .work__resume:focus,
+.space--night .work__resume:focus {
+	box-shadow: 0 0 5px 5px $maize;
+	outline: none;
+}
+
+.earth--day .work__resume:hover,
+.earth--day .work__resume:focus,
+.space--day .work__resume:hover,
+.space--day .work__resume:focus {
 	background-color: $independence-lighter;
 }
 
-.space--night .work__resume:hover {
-	background-color: $palecerulean-light;
-}
-
-.space--day .work__resume:hover {
-	background-color: $independence-lighter;
+.earth--day .work__resume:hover,
+.space--day .work__resume:hover,
+.earth--day .work__resume:focus,
+.space--day .work__resume:focus {
+	box-shadow: 0 0 5px 5px $maize;
+	outline: none;
 }
 
 .work__resume-text {
@@ -70,7 +83,8 @@
 	transition: transform 0s ease-out;
 }
 
-.work__resume-text:hover {
+.work__resume-text:hover,
+.work__resume-text:focus {
 	transform: translate(0, -110px);
 }
 
@@ -94,13 +108,10 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
+	display: block;
 	height: 200px;
 	margin: 0;
 	width: 300px;
-}
-
-.project__link {
-	display: block;
 }
 
 .project__description {
@@ -122,20 +133,27 @@
 	text-align: center;
 }
 
-.project__click:hover {
+.project__click:hover,
+.project__text:focus .project__click {
 	color: $maize;
 }
 
 .project__text {
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.7);
 	display: flex;
 	flex-direction: column;
 	height: 200px;
 	justify-content: space-between;
 	padding: 10px;
 	position: absolute;
-	transform: translate(0, -200px);
+	/*transform: translate(0, -200px);*/
 	width: 300px;
+}
+
+.project:hover .project__text,
+.project__text:focus {
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: inset 0 0 5px 3px $maize;
 }
 
 .project__image--Twitter {
@@ -213,12 +231,20 @@
 	
 	.project__text {
 		background-color: rgba(0,0,0,0.7);
-		transform: none;
+		transform: translate(0, 200px);
 		transition: transform .3s ease-out;
 	}
 
 	.project:hover .project__text {
-		transform: translate(0, -200px);
+		background-color: rgba(0,0,0,0.7);
+		box-shadow: none;
+		transform: translate(0, 0);
+	}
+	
+	.project .project__text:focus {
+		box-shadow: none;
+		outline: none;
+		transform: translate(0, 0);
 	}
 	
 	.work__image--buildings {

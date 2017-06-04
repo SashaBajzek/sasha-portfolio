@@ -111,9 +111,17 @@
 }
 
 .hero__image--rocket:hover,
-.hero__image--rocket-alien:hover {
+.hero__image--rocket:focus,
+.hero__image--rocket-alien:hover,
+.hero__image--rocket-alien:focus {
 	animation: rocket-hover 0.5s linear;
 	cursor: pointer;
+	outline: none;
+}
+
+.hero__image--rocket:focus,
+.hero__image--rocket-alien:focus {
+	box-shadow: 0 0 5px 5px $maize;
 }
 
 
@@ -199,12 +207,24 @@
 	100% {transform: scale(1);}
 }
 
-.hero__image--moon:hover, 
+.hero__image--moon:hover,
+.hero__image--moon:focus,
 .hero__image--sun:hover,
+.hero__image--sun:focus,
 .hero__image--earth-minimal:hover,
-.hero__image--jupiter:hover {
+.hero__image--earth-minimal:focus,
+.hero__image--jupiter:hover,
+.hero__image--jupiter:focus {
 	animation: sunmoon-hover 1s 1 ease-out;
 	cursor: pointer;
+	outline: none;
+}
+
+.hero__image--moon:focus,
+.hero__image--sun:focus,
+.hero__image--earth-minimal:focus,
+.hero__image--jupiter:focus {
+	box-shadow: 0 0 5px 5px $maize;
 }
 
 @keyframes sunmoon-hover {

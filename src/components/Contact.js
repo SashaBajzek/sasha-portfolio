@@ -12,22 +12,22 @@ class Contact extends Component {
 					<a className="contact__email" href="mailto:sasha.bajzek@gmail.com">sasha.bajzek@gmail.com</a>
 					<ul className="list--contacts">
 						<li>
-							<a href="https://github.com/SashaBajzek">
+							<a className="contact" href="https://github.com/SashaBajzek">
 								<img className="contact__image contact__image--github" src={"./GitHub-Mark-Light-64px.png"} alt="Github" />			
 							</a>
 						</li>
 						<li>
-							<a href="https://www.linkedin.com/in/sasha-bajzek-311b211a/">
+							<a className="contact" href="https://www.linkedin.com/in/sasha-bajzek-311b211a/">
 								<img className="contact__image" src={"./In-White-54px-TM.png"} alt="LinkedIn" />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.facebook.com/sasha.bajzek">
+							<a className="contact" href="https://www.facebook.com/sasha.bajzek">
 								<img className="contact__image" src={"./FB-f-Logo__white_50.png"} alt="Facebook" />			
 							</a>
 						</li>
 						<li>
-							<a href="mailto:sasha.bajzek@gmail.com">
+							<a className="contact" href="mailto:sasha.bajzek@gmail.com">
 								<img className="contact__image contact__image--email" src={"./email.svg"} alt="Email" />
 							</a>
 						</li>
