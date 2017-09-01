@@ -51,10 +51,6 @@ class Hero extends Component {
 			
 					<SaturnSmooth earthspinAnimation={this.earthspinAnimation} earthspin={this.state.earthspin}/>
 			
-					<Rocket takeoffAnimation={this.takeoffAnimation} takeoff={this.state.takeoff}/>
-			
-					<RocketAlien takeoffAnimation={this.takeoffAnimation} takeoff={this.state.takeoff}/>
-			
 					<Moon changeTimeOfDay={this.props.changeTimeOfDay} />
 			
 					<Sun changeTimeOfDay={this.props.changeTimeOfDay} />
@@ -62,6 +58,12 @@ class Hero extends Component {
 					<EarthMinimal changeTimeOfDay={this.props.changeTimeOfDay} />
 			
 					<Jupiter changeTimeOfDay={this.props.changeTimeOfDay} />
+			
+					<Rocket takeoffAnimation={this.takeoffAnimation} takeoff={this.state.takeoff}/>
+			
+					<RocketAlien takeoffAnimation={this.takeoffAnimation} takeoff={this.state.takeoff}/>
+			
+					
 				</div>
 			</div>
 		);
