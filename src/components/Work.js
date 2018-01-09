@@ -12,16 +12,18 @@ class Work extends Component {
 					<h2 className="section__header">Examples of my work</h2>
 					<a id="scrollTo--work" href="./SashaBajzekResume.pdf" download className="work__resume"><p className="work__resume-text">Resum&eacute; Click Here</p></a>
 					<ul className="list--projects">
+						
+						<ProjectBox project__name="Spectrum" project__heading="Spectrum Technology Group" project__site="http://www.spectrumtechnology.us/" project__description="A professional, mobile friendly website using React.  Utilizes BEM syntax to keep CSS clear."/>
 
-						<ProjectBox project__name="Haiku" project__heading="Haiku For You" project__site="https://haiku.sashabajzek.com/" project__description="A React and Redux front end combined with a Rails API backend to create a site for poetry enthusiasts."/>
-
-						<ProjectBox project__name="Spectrum" project__heading="Spectrum Technology Group" project__site="https://spectrum.sashabajzek.com/" project__description="A professional, mobile friendly website using React.  Utilizes BEM syntax to keep CSS clear."/>
-			
-						<ProjectBox project__name="StemChef" project__heading="StemChef" project__site="https://stemchef.sashabajzek.com/" project__description="A React-powered landing site for a scientific cooking class for kids."/>
+						<ProjectBox project__name="JS-808" project__heading="JS-808" project__site="https://js-808.sashabajzek.com/" project__description="A drum machine coded with React"/>
 			
 						<ProjectBox project__name="Bridal" project__heading="Bridal Game Face" project__site="https://bridalgameface.com/" project__description="A React site that teaches how to create a bridal makeup look."/>
+
+						<ProjectBox project__name="StemChef" project__heading="StemChef" project__site="https://stemchef.sashabajzek.com/" project__description="A React-powered landing site for a scientific cooking class for kids."/>
 			
 						<ProjectBox project__name="Twitter" project__heading="Beach Twitter" project__site="https://beach-twitter.sashabajzek.com" project__description="A beachy version of a Twitter front end using React, Redux, Reselect, and Normalizr to optimize efficiency."/>
+
+						<ProjectBox project__name="Haiku" project__heading="Haiku For You" project__site="https://haiku.sashabajzek.com/" project__description="A React and Redux front end combined with a Rails API backend to create a site for poetry enthusiasts."/>
 
 						<ProjectBox project__name="Calgary" project__heading="Southwest Calgary Ring Road" project__site="http://www.swcrrproject.com/" project__description="Designed the box girders, deck, approach slabs, and wingwalls for Bridge 9, a 29m single span, integral abutment bridge."/>
 
