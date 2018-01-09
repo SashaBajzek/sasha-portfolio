@@ -20,6 +20,8 @@ class Work extends Component {
 						<ProjectBox project__name="Bridal" project__heading="Bridal Game Face" project__site="https://bridalgameface.com/" project__description="A React site that teaches how to create a bridal makeup look."/>
 
 						<ProjectBox project__name="StemChef" project__heading="StemChef" project__site="https://stemchef.sashabajzek.com/" project__description="A React-powered landing site for a scientific cooking class for kids."/>
+
+						<ProjectBox project__name="ColorGame" project__heading="RGB Color Game" project__site="https://color-game.sashabajzek.com/" project__description="An RGB color game made with Vanilla JavaScript."/>
 			
 						<ProjectBox project__name="Twitter" project__heading="Beach Twitter" project__site="https://beach-twitter.sashabajzek.com" project__description="A beachy version of a Twitter front end using React, Redux, Reselect, and Normalizr to optimize efficiency."/>
 
