@@ -17,7 +17,7 @@ class Contact extends Component {
 							</a>
 						</li>
 						<li>
-							<a className="contact" href="https://www.linkedin.com/in/sasha-bajzek-311b211a/">
+							<a className="contact" href="https://www.linkedin.com/in/SashaBajzek">
 								<img className="contact__image" src={"./In-White-54px-TM.png"} alt="LinkedIn" />
 							</a>
 						</li>
