@@ -17,6 +17,8 @@ class Work extends Component {
 
 						<ProjectBox project__name="JS-808" project__heading="JS-808" project__site="https://js-808.sashabajzek.com/" project__description="A drum machine coded with React"/>
 			
+						<ProjectBox project__name="Diwala" project__heading="Diwala" project__site="https://diwala.io/" project__description="Volunteer frontend engineer for Diwala, a non-profit company working to create a decentralised platform that verifies the skills of people in displacement"/>
+
 						<ProjectBox project__name="Bridal" project__heading="Bridal Game Face" project__site="https://bridalgameface.com/" project__description="A React site that teaches how to create a bridal makeup look."/>
 
 						<ProjectBox project__name="StemChef" project__heading="StemChef" project__site="https://stemchef.sashabajzek.com/" project__description="A React-powered landing site for a scientific cooking class for kids."/>
