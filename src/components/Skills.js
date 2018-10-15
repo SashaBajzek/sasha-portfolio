@@ -139,6 +139,19 @@ class Skills extends Component {
                 <li>
                   <a
                     className="skill"
+                    href="https://www.britannica.com/art/violin"
+                  >
+                    <p className="skills__name">Violin</p>
+                    <img
+                      className="skills__logo"
+                      src="./violin.svg"
+                      alt="Violin"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="skill"
                     href="https://en.wikipedia.org/wiki/Natural_skin_care"
                   >
                     <p className="skills__name">DIY Skincare</p>
