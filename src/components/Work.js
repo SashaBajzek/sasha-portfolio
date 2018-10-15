@@ -16,8 +16,12 @@ class Work extends Component {
 						<ProjectBox project__name="Spectrum" project__heading="Spectrum Technology Group" project__site="http://www.spectrumtechnology.us/" project__description="A professional, mobile friendly website using React.  Utilizes BEM syntax to keep CSS clear."/>
 
 						<ProjectBox project__name="JS-808" project__heading="JS-808" project__site="https://js-808.sashabajzek.com/" project__description="A drum machine coded with React"/>
+
+						<ProjectBox project__name="DataVis" project__heading="Data Visualization" project__site="https://testnet.constellationlabs.io/" project__description="A data visualization tool for blockchain transactions using React and Mapbox"/>
 			
 						<ProjectBox project__name="Diwala" project__heading="Diwala" project__site="https://diwala.io/" project__description="Volunteer frontend engineer for Diwala, a non-profit company working to create a decentralised platform that verifies the skills of people in displacement"/>
+
+						<ProjectBox project__name="Pacman" project__heading="WIP Birthday Pacman" project__site="http://isitjeffreysbday.info/" project__description="A WIP birthday pacman site made with React and TypeScript"/>
 
 						<ProjectBox project__name="Bridal" project__heading="Bridal Game Face" project__site="https://bridalgameface.com/" project__description="A React site that teaches how to create a bridal makeup look."/>
 
