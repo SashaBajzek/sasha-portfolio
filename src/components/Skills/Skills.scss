@@ -1,0 +1,127 @@
+@import '../variables';
+
+.section--skills {
+  color: $blackgrey;
+}
+
+.container--skills {
+  margin: 0 auto;
+  padding: 0;
+  max-width: $screen-sm-min - 200px;
+}
+
+.earth--day .section--skills {
+  background-color: $pistachio;
+}
+
+.earth--night .section--skills {
+  background-color: $pistachio-dark;
+}
+
+.space--day .section--skills {
+  background-color: $pistachio;
+}
+
+.space--night .section--skills {
+  background-color: $palecerulean-dark;
+}
+
+.list--skills-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0 75px;
+  margin: 0 auto;
+}
+
+.list__heading--skills-main {
+  text-align: center;
+}
+
+.list--skills-sub {
+  margin: 0 auto;
+  padding: 0;
+  width: 240px;
+}
+
+.skill {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: all 4s ease-out;
+}
+
+.skill:focus {
+  outline: none;
+}
+
+.skills__logo {
+  max-height: 30px;
+  max-width: 30px;
+  transition: all 4s ease-out;
+}
+
+.skills__name {
+  color: $blackgrey;
+  display: inline-block;
+  margin: 0;
+  padding: 5px 10px 5px;
+  line-height: 30px;
+}
+
+.skill:hover .skills__name,
+.skill:focus .skills__name {
+  font-weight: 600;
+}
+
+.list--skills-sub li:nth-child(odd) .skills__name {
+  order: 1;
+}
+
+.list--skills-sub li:nth-child(odd) .skills__logo {
+  order: 2;
+}
+
+.list--skills-sub li:nth-child(even) .skills__name {
+  order: 2;
+}
+
+.list--skills-sub li:nth-child(even) .skills__logo {
+  order: 1;
+}
+
+/* Media Sizes */
+
+@media (min-width: $screen-sm-min) {
+  .container--skills {
+    max-width: $screen-sm-min;
+  }
+
+  .list--skills-main {
+    flex-direction: row;
+  }
+
+  .skills__logo:hover,
+  .skill:hover .skills__logo,
+  .skills__logo:focus,
+  .skill:focus .skills__logo {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
+
+/* Desktop Screen Size */
+
+@media (min-width: $screen-md-min) {
+  .container--skills {
+    max-width: $screen-md-min - 50px;
+  }
+}
+
+/* XL Desktop Screen Size */
+
+@media (min-width: $screen-lg-min) {
+  .container--skills {
+    max-width: $screen-md-min;
+  }
+}

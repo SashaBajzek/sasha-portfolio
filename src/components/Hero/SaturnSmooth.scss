@@ -1,0 +1,37 @@
+@import '../variables.scss';
+
+.space--day {
+  .saturn-smooth__crater {
+    fill: $palecerulean-darker;
+  }
+
+  .saturn-smooth__body--main {
+    fill: $pistachio;
+  }
+
+  .saturn-smooth__ring--accent {
+    fill: $maize;
+  }
+
+  .saturn-smooth__ring--main {
+    fill: $maize-darker;
+  }
+}
+
+.space--night {
+  .saturn-smooth__crater {
+    fill: $palecerulean-darkest;
+  }
+
+  .saturn-smooth__body--main {
+    fill: $palecerulean-dark;
+  }
+
+  .saturn-smooth__ring--accent {
+    fill: $queenblue-lighter;
+  }
+
+  .saturn-smooth__ring--main {
+    fill: $queenblue;
+  }
+}

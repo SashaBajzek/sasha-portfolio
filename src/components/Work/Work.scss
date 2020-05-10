@@ -1,0 +1,301 @@
+@import '../variables.scss';
+
+.section--work {
+  background-color: $queenblue-dark;
+  color: $maize;
+  padding-top: 75px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.container--work {
+  margin: 0 auto;
+  padding: 0;
+  max-width: $screen-xs-min - 50px;
+}
+
+.earth--night .section--work {
+  background-color: $queenblue-dark;
+  color: $maize;
+}
+
+.earth--day .section--work {
+  background-color: $palecerulean-light;
+  color: $queenblue-dark;
+}
+
+.work__resume {
+  background-color: $maize-lighter;
+  background-image: url(./feather.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 5px solid $queenblue-dark;
+  border-radius: 50%;
+  color: $blackgrey;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  height: 120px;
+  left: 0;
+  line-height: 110px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: -60px;
+  width: 120px;
+}
+
+.earth--night .work__resume:hover,
+.earth--night .work__resume:focus,
+.space--night .work__resume:hover,
+.space--night .work__resume:focus {
+  background-color: $palecerulean-light;
+}
+
+.earth--night .work__resume:hover,
+.space--night .work__resume:hover,
+.earth--night .work__resume:focus,
+.space--night .work__resume:focus {
+  box-shadow: 0 0 5px 5px $maize;
+  outline: none;
+}
+
+.earth--day .work__resume:hover,
+.earth--day .work__resume:focus,
+.space--day .work__resume:hover,
+.space--day .work__resume:focus {
+  background-color: $independence-lighter;
+}
+
+.earth--day .work__resume:hover,
+.space--day .work__resume:hover,
+.earth--day .work__resume:focus,
+.space--day .work__resume:focus {
+  box-shadow: 0 0 5px 5px $maize;
+  outline: none;
+}
+
+.work__resume-text {
+  margin: 0;
+  transition: transform 0s ease-out;
+}
+
+.work__resume-text:hover,
+.work__resume-text:focus {
+  transform: translate(0, -110px);
+}
+
+.list--projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.project {
+  background-color: teal;
+  height: 200px;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+}
+
+.project__image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 200px;
+  margin: 0;
+  width: 300px;
+}
+
+.project__description {
+  color: white;
+}
+
+.project__heading {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project__description {
+  color: white;
+}
+
+.project__click {
+  color: white;
+  text-align: center;
+}
+
+.project__click:hover,
+.project__text:focus .project__click {
+  color: $maize;
+}
+
+.project__text {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+  padding: 10px;
+  position: absolute;
+  /*transform: translate(0, -200px);*/
+  width: 300px;
+}
+
+.project:hover .project__text,
+.project__text:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 0 5px 3px $maize;
+}
+
+.project__image--DataVis {
+  background-image: url(./DataVis--Small.png);
+}
+
+.project__image--Pacman {
+  background-image: url(./Pacman--Small.png);
+}
+
+.project__image--Twitter {
+  background-image: url(./BeachTwitter--Small.png);
+}
+
+.project__image--Haiku {
+  background-image: url(./Haiku--Small.png);
+}
+
+.project__image--Spectrum {
+  background-image: url(./Spectrum--Small.png);
+}
+
+.project__image--JS-808 {
+  background-image: url(./JS808--Small.png);
+}
+
+.project__image--StemChef {
+  background-image: url(./StemChef--Small.png);
+}
+
+.project__image--ColorGame {
+  background-image: url(./ColorPicker--Small.png);
+}
+
+.project__image--Calgary {
+  background-image: url(./Calgary--Small.png);
+}
+
+.project__image--CP1 {
+  background-image: url(./CP1--Small.png);
+}
+
+.project__image--IL104 {
+  background-image: url(./IL104--Small.png);
+}
+
+.project__image--HCB {
+  background-image: url(./HCB--Small.png);
+}
+
+.project__image--Bridal {
+  background-image: url(./Bridal--Small.png);
+}
+
+.project__image--Diwala {
+  background-image: url(./Diwala--Small.png);
+}
+
+.work__image--buildings {
+  bottom: -1px;
+  height: 53px;
+  left: 0;
+  position: absolute;
+  width: 320px;
+}
+
+.work__image--mountain {
+  bottom: 0;
+  height: 105px;
+  position: absolute;
+  right: 10px;
+  width: 289px;
+  visibility: hidden;
+}
+
+/* Media Sizes */
+
+@media (min-width: $screen-sm-min) {
+  .container--work {
+    max-width: $screen-sm-min;
+  }
+
+  .work__image--buildings {
+    height: 58px;
+    width: 350px;
+  }
+
+  .work__image--mountain {
+    visibility: visible;
+  }
+}
+
+/* Desktop Screen Size */
+
+@media (min-width: $screen-md-min) {
+  .container--work {
+    max-width: $screen-md-min;
+  }
+
+  .project__text {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translate(0, 200px);
+    transition: transform 0.3s ease-out;
+  }
+
+  .project:hover .project__text {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: none;
+    transform: translate(0, 0);
+  }
+
+  .project .project__text:focus {
+    box-shadow: none;
+    outline: none;
+    transform: translate(0, 0);
+  }
+
+  .work__image--buildings {
+    height: 70px;
+    width: 420px;
+  }
+
+  .work__image--mountain {
+    height: 145px;
+    width: 387px;
+  }
+}
+
+/* XL Desktop Screen Size */
+
+@media (min-width: $screen-lg-min) {
+  .container--work {
+    max-width: $screen-md-min;
+  }
+
+  .work__image--buildings {
+    height: 80px;
+    width: 475px;
+  }
+
+  .work__image--mountain {
+    height: 163px;
+    width: 432px;
+  }
+}

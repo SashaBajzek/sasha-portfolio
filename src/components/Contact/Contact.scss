@@ -1,0 +1,152 @@
+@import '../variables.scss';
+
+.section--contact {
+  background-color: $independence-dark;
+  color: $maize;
+}
+
+.container--contact {
+  margin: 0 auto;
+  padding: 0;
+  max-width: $screen-sm-min - 200px;
+}
+
+.earth--night .section--contact,
+.space--night .section--contact {
+  background-color: $independence-dark;
+  color: $maize;
+}
+
+.earth--day .section--contact,
+.space--day .section--contact {
+  background-color: $independence;
+  color: $maize;
+}
+
+.contact__email {
+  color: white;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+.contact__email:hover,
+.contact__email:focus {
+  color: $maize;
+}
+
+.contact__email:focus {
+  outline: none;
+  box-shadow: 0 0 10px 5px $maize;
+}
+
+.list--contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.contact__image {
+  box-shadow: 0 0 10px 10px transparent;
+  height: 40px;
+}
+
+.contact:hover,
+.contact:focus {
+  outline: none;
+}
+
+.contact:hover .contact__image,
+.contact:focus .contact__image {
+  box-shadow: 0 0 10px 5px $maize;
+  outline: none;
+}
+
+.contact__image--github {
+  border-radius: 50%;
+}
+
+.contact__image--email {
+  height: 35px;
+}
+
+.contact__image--superhero {
+  animation: superhero-flyby 10s infinite linear;
+  display: block;
+  height: 40px;
+  margin: 0 auto;
+}
+
+@keyframes superhero-flyby {
+  0% {
+    transform: translateX(60vw) scale(0.3);
+    transform-origin: center;
+  }
+  40% {
+    transform: translateX(0px) scale(1.1);
+  }
+  42% {
+    transform: rotate(0deg) scale(1.1);
+    transform-origin: center;
+  }
+  44% {
+    transform: rotate(1deg) scale(1.1);
+    transform-origin: center;
+  }
+  46% {
+    transform: rotate(-2deg) scale(1.1);
+    transform-origin: center;
+  }
+  48% {
+    transform: rotate(1deg) scale(1.1);
+    transform-origin: center;
+  }
+  50% {
+    transform: translateX(0px) scale(1.1);
+  }
+  52% {
+    transform: translateX(15px) scale(1.1);
+  }
+  100% {
+    transform: translateX(-60vw) scale(0.3);
+  }
+}
+
+/* Media Sizes */
+
+@media (min-width: $screen-sm-min) {
+  .container--contact {
+    max-width: $screen-sm-min - 200px;
+  }
+
+  .contact__image {
+    height: 50px;
+  }
+
+  .contact__image--email {
+    height: 45px;
+  }
+
+  .contact__image--superhero {
+    animation: superhero-flyby 13s infinite linear;
+    height: 50px;
+  }
+}
+
+/* Desktop Screen Size */
+
+@media (min-width: $screen-md-min) {
+  .container--contact {
+    max-width: $screen-md-min - 200px;
+  }
+}
+
+/* XL Desktop Screen Size */
+
+@media (min-width: $screen-lg-min) {
+  .container--contact {
+    max-width: $screen-md-min - 200px;
+  }
+}

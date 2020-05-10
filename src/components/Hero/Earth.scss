@@ -1,0 +1,37 @@
+@import '../variables.scss';
+
+.earth--day {
+  .earth__ocean--dark {
+    fill: $queenblue-darker;
+  }
+
+  .earth__ocean--light {
+    fill: $queenblue-dark;
+  }
+
+  .earth__land--dark {
+    fill: $pistachio-darker;
+  }
+
+  .earth__land--light {
+    fill: $pistachio-dark;
+  }
+}
+
+.earth--night {
+  .earth__ocean--dark {
+    fill: $queenblue;
+  }
+
+  .earth__ocean--light {
+    fill: $queenblue-light;
+  }
+
+  .earth__land--dark {
+    fill: $pistachio-dark;
+  }
+
+  .earth__land--light {
+    fill: $pistachio;
+  }
+}

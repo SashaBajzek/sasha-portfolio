@@ -1,0 +1,77 @@
+@import '../variables.scss';
+
+.superhero__cape-shadow {
+  fill: $pistachio;
+}
+
+.superhero__cape-main {
+  fill: $pistachio-light;
+}
+
+.superhero__iris {
+  fill: $pistachio;
+}
+
+.superhero__boot-shadow {
+  fill: $queenblue-dark;
+}
+
+.superhero__boot {
+  fill: $queenblue;
+}
+
+.superhero__glove {
+  fill: $queenblue;
+}
+
+.superhero__tongue {
+  fill: #dd3432;
+}
+
+.superhero__mask {
+  fill: $palecerulean-dark;
+}
+
+.superhero__accessory--accent {
+  fill: $queenblue-dark;
+}
+
+.superhero__clothing--main {
+  fill: $palecerulean;
+}
+
+.superhero__clothing--accent {
+  fill: $palecerulean-dark;
+}
+
+.superhero__nose {
+  fill: #cca183;
+}
+
+.superhero__skin {
+  fill: #dbb397;
+}
+
+.superhero__mouth {
+  fill: #212121;
+}
+
+.superhero__cheeks {
+  fill: #ef9884;
+}
+
+.superhero__eye-shadow {
+  fill: #e8e8e8;
+}
+
+.superhero__eye--white {
+  fill: #f4f3f2;
+}
+
+.superhero__hair--accent {
+  fill: #84563d;
+}
+
+.superhero__hair--main {
+  fill: #70482a;
+}

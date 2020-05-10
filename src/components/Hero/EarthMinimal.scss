@@ -1,0 +1,21 @@
+@import '../variables.scss';
+
+.earth-minimal {
+  height: 200px;
+}
+
+.earth-minimal__land--accent {
+  fill: $pistachio-light;
+}
+
+.earth-minimal__land--main {
+  fill: $pistachio;
+}
+
+.earth-minimal__ocean--accent {
+  fill: $queenblue-lighter;
+}
+
+.earth-minimal__ocean--main {
+  fill: $queenblue-light;
+}

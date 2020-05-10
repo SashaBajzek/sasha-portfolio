@@ -1,0 +1,94 @@
+@import '../variables.scss';
+
+.alien {
+  height: 200px;
+}
+
+.alien__spots {
+  fill: $pistachio;
+}
+
+.alien__body {
+  fill: $pistachio-dark;
+}
+
+.alien__tongue {
+  fill: #e4495c;
+}
+
+.alien__eye--whites {
+  fill: #f2f2f2;
+}
+
+.alien__teeth {
+  fill: #f2f2f2;
+}
+
+.alien__eye--pupil {
+  fill: #474747;
+}
+
+.alien__eye--shadow {
+  fill: #d3edec;
+}
+
+.alien__eye--iris {
+  fill: #78cccc;
+}
+
+.welcome__image--alien-1 {
+  animation: alien-shuffle1 8s infinite linear;
+}
+
+.welcome__image--alien-2 {
+  animation: alien-shuffle2 10s infinite linear;
+}
+
+.welcome__image--alien-3 {
+  animation: alien-shuffle3 6s infinite linear;
+}
+
+@keyframes alien-shuffle1 {
+  0% {
+    transform: scale(1) translate(-20px);
+    transform-origin: bottom;
+  }
+  50% {
+    transform: scale(1.2) translate(20px);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scale(1) translate(-20px);
+    transform-origin: bottom;
+  }
+}
+
+@keyframes alien-shuffle2 {
+  0% {
+    transform: scale(1) translate(10px);
+    transform-origin: bottom;
+  }
+  50% {
+    transform: scale(1.15) translate(-10px);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scale(1) translate(10px);
+    transform-origin: bottom;
+  }
+}
+
+@keyframes alien-shuffle3 {
+  0% {
+    transform: scale(1) translate(-30px);
+    transform-origin: bottom;
+  }
+  50% {
+    transform: scale(1.25) translate(30px);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scale(1) translate(-30px);
+    transform-origin: bottom;
+  }
+}
