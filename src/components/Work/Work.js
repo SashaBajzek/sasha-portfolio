@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import resume from './SashaBajzekResume.pdf'
 import ProjectBox from './ProjectBox'
 import {Buildings} from './Buildings'
 import {Mountain} from './Mountain'
@@ -11,7 +12,7 @@ class Work extends Component {
       <section className="section--work">
         <div className="container--work">
           <h2 className="section__header">Examples of my work</h2>
-          <a id="scrollTo--work" href="./SashaBajzekResume.pdf" download className="work__resume">
+          <a id="scrollTo--work" href={resume} download className="work__resume">
             <p className="work__resume-text">Resum&eacute; Click Here</p>
           </a>
           <ul className="list--projects">
