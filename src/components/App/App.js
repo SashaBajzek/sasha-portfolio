@@ -39,11 +39,11 @@ const App = () => {
   return (
     <div className={`App ${isOnEarth ? 'earth' : 'space'}--${isDayTime ? 'day' : 'night'}`}>
       <Header
+        closeHamburger={handleCloseMenu}
         menuStatus={isMenuOpen ? 'menuOpen' : 'menuClosed'}
         toggleHamburger={handleToggleMenu}
-        closeHamburger={handleCloseMenu}
       />
-      <Hero changeTimeOfDay={handleChangeTime} changePlanet={handleChangePlanet} />
+      <Hero changePlanet={handleChangePlanet} changeTimeOfDay={handleChangeTime} />
       <Welcome />
       <Skills />
       <Work />
