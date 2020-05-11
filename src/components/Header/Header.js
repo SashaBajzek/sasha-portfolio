@@ -13,7 +13,9 @@ const Header = ({closeHamburger, menuStatus, offset, toggleHamburger}) => {
     <header className={menuStatus}>
       <div className="container--header">
         <h1 className="header__name">Sasha Bajzek</h1>
-        <button onClick={toggleHamburger} className="header__hamburger" tabIndex="0"></button>
+        <button onClick={toggleHamburger} className="header__hamburger" tabIndex="0">
+          <span className="visually-hidden">Menu Toggle</span>
+        </button>
         <nav className="header__nav">
           <ul className="list--header-nav">
             {menuItems.map(item => (

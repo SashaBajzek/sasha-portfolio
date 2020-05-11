@@ -9,6 +9,15 @@ header {
   z-index: 2;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .container--header {
   align-items: center;
   display: flex;
