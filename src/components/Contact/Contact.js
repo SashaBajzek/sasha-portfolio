@@ -21,25 +21,25 @@ const Contact = () => {
           <li>
             <a className="contact" href="https://github.com/SashaBajzek">
               <img className="contact__image contact__image--github" src={GitHubLogo} alt="" />
-              <span class="visually-hidden">Sasha's Github Account</span>
+              <span className="visually-hidden">Sasha's Github Account</span>
             </a>
           </li>
           <li>
             <a className="contact" href="https://www.linkedin.com/in/SashaBajzek">
               <img className="contact__image" src={LinkedInLogo} alt="" />
-              <span class="visually-hidden">Sasha's LinkedIn Profile</span>
+              <span className="visually-hidden">Sasha's LinkedIn Profile</span>
             </a>
           </li>
           <li>
             <a className="contact" href="https://www.facebook.com/sasha.bajzek">
               <img className="contact__image" src={FacebookLogo} alt="" />
-              <span class="visually-hidden">Sasha's Facebook Page</span>
+              <span className="visually-hidden">Sasha's Facebook Page</span>
             </a>
           </li>
           <li>
             <a className="contact" href="mailto:sasha.bajzek@gmail.com">
               <img className="contact__image contact__image--email" src={emailLogo} alt="" />
-              <span class="visually-hidden">Email Sasha</span>
+              <span className="visually-hidden">Email Sasha</span>
             </a>
           </li>
         </ul>

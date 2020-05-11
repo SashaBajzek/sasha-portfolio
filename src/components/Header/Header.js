@@ -1,17 +1,8 @@
 import React from 'react'
-import {useWindowWidth} from '@react-hook/window-size/throttled'
 import {Link} from 'react-scroll'
 import './Header.scss'
 
-const Header = ({closeHamburger, menuStatus, toggleHamburger}) => {
-  const screenWidth = useWindowWidth()
-  const [offset, setOffset] = React.useState(0)
-
-  // Add offset in mobile to account for the fixed header when using the scrollTo
-  React.useEffect(() => {
-    screenWidth <= 768 ? setOffset(-40) : setOffset(0)
-  }, [screenWidth])
-
+const Header = ({closeHamburger, menuStatus, offset, toggleHamburger}) => {
   const menuItems = [
     {tab: 'welcome', text: 'About Me'},
     {tab: 'skills', text: 'Skills'},
@@ -29,13 +20,13 @@ const Header = ({closeHamburger, menuStatus, toggleHamburger}) => {
               <li className="listItem--header-nav" key={item.tab}>
                 <Link
                   className="listItem__text--header-nav"
-                  to={`scrollTo--${item.tab}`}
-                  spy={true}
-                  offset={offset}
-                  smooth={true}
                   duration={500}
-                  onClick={closeHamburger}
                   href={`#scrollTo--${item.tab}`}
+                  offset={offset}
+                  onClick={closeHamburger}
+                  smooth={true}
+                  spy={true}
+                  to={`scrollTo--${item.tab}`}
                 >
                   <span className="listItem__underline--header-nav">{item.text}</span>
                 </Link>
