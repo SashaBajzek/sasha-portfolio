@@ -6,7 +6,7 @@ import {Vine1} from './Vine1'
 import {Vine2} from './Vine2'
 import {Alien} from './Alien'
 import './Welcome.scss'
-import sasha from './Sasha.png'
+import sasha from './Sasha.jpg'
 
 class Welcome extends Component {
   render() {

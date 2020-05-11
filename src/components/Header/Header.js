@@ -54,12 +54,7 @@ export default class Header extends Component {
       <header className={this.props.menuStatus}>
         <div className="container--header">
           <h1 className="header__name">Sasha Bajzek</h1>
-          <button
-            role="button"
-            onClick={this.props.toggleHamburger}
-            className="header__hamburger"
-            tabIndex="0"
-          ></button>
+          <button onClick={this.props.toggleHamburger} className="header__hamburger" tabIndex="0"></button>
           <nav className="header__nav">
             <ul className="list--header-nav">
               <li className="listItem--header-nav">

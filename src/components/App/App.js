@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
@@ -8,86 +8,49 @@ import Welcome from '../Welcome/Welcome'
 import Work from '../Work/Work'
 import './App.scss'
 
-class App extends Component {
-  year = new Date().getFullYear()
-  hour = new Date().getHours()
+const App = () => {
+  const year = new Date().getFullYear()
+  const [isDayTime, setIsDayTime] = React.useState(true)
+  const [isOnEarth, setIsOnEarth] = React.useState(true)
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
-  getTimeOfDay = hour => {
-    if (this.hour >= 5 && this.hour < 17) {
-      return 'day'
-    } else {
-      return 'night'
-    }
-  }
+  // set initial time
+  React.useEffect(() => {
+    const hour = new Date().getHours()
+    setIsDayTime(hour >= 5 && hour < 17)
+  }, [])
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      timeofday: this.getTimeOfDay(this.hour),
-      planet: 'earth',
-      menuStatus: 'menuClosed',
-    }
-  }
+  const handleChangePlanet = React.useCallback(() => {
+    setIsOnEarth(!isOnEarth)
+  }, [isOnEarth, setIsOnEarth])
 
-  changeTimeOfDay = () => {
-    if (this.state.timeofday === 'day') {
-      this.setState(prevState => ({
-        timeofday: 'night',
-      }))
-    } else {
-      this.setState(prevState => ({
-        timeofday: 'day',
-      }))
-    }
-  }
+  const handleChangeTime = React.useCallback(() => {
+    setIsDayTime(!isDayTime)
+  }, [isDayTime, setIsDayTime])
 
-  changePlanet = () => {
-    if (this.state.planet === 'earth') {
-      this.setState(prevState => ({
-        planet: 'space',
-      }))
-    } else {
-      this.setState(prevState => ({
-        planet: 'earth',
-      }))
-    }
-  }
+  const handleCloseMenu = React.useCallback(() => {
+    setIsMenuOpen(false)
+  }, [setIsMenuOpen])
 
-  toggleHamburger = () => {
-    if (this.state.menuStatus === 'menuClosed') {
-      this.setState(prevState => ({
-        menuStatus: 'menuOpen',
-      }))
-    } else {
-      this.setState(prevState => ({
-        menuStatus: 'menuClosed',
-      }))
-    }
-  }
+  const handleToggleMenu = React.useCallback(() => {
+    setIsMenuOpen(!isMenuOpen)
+  }, [isMenuOpen, setIsMenuOpen])
 
-  closeHamburger = () => {
-    this.setState(prevState => ({
-      menuStatus: 'menuClosed',
-    }))
-  }
-
-  render() {
-    return (
-      <div className={`App ${this.state.planet}--${this.state.timeofday}`}>
-        <Header
-          menuStatus={this.state.menuStatus}
-          toggleHamburger={this.toggleHamburger}
-          closeHamburger={this.closeHamburger}
-        />
-        <Hero changeTimeOfDay={this.changeTimeOfDay} changePlanet={this.changePlanet} />
-        <Welcome />
-        <Skills />
-        <Work />
-        <Contact />
-        <Footer year={this.year} />
-      </div>
-    )
-  }
+  return (
+    <div className={`App ${isOnEarth ? 'earth' : 'space'}--${isDayTime ? 'day' : 'night'}`}>
+      <Header
+        menuStatus={isMenuOpen ? 'menuOpen' : 'menuClosed'}
+        toggleHamburger={handleToggleMenu}
+        closeHamburger={handleCloseMenu}
+      />
+      <Hero changeTimeOfDay={handleChangeTime} changePlanet={handleChangePlanet} />
+      <Welcome />
+      <Skills />
+      <Work />
+      <Contact />
+      <Footer year={year} />
+    </div>
+  )
 }
 
 export default App
