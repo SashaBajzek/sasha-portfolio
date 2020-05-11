@@ -12,6 +12,7 @@ import {
   garden,
   violin,
   modelBridge,
+  a11y,
   bridge,
   inspect,
   foosball,
@@ -45,7 +46,7 @@ const Skills = () => {
     },
   ]
   const practicalSkills = [
-    {image: camping, link: 'https://www.w3.org/WAI/fundamentals/accessibility-intro/', text: 'Accessibility'},
+    {image: a11y, link: 'https://www.w3.org/WAI/fundamentals/accessibility-intro/', text: 'Accessibility'},
     {image: bridge, link: 'https://en.wikipedia.org/wiki/Structural_engineering', text: 'Structural Engineering'},
     {image: inspect, link: 'https://www.fhwa.dot.gov/bridge/inspection/', text: 'Bridge Inspecting'},
     {image: foosball, link: 'https://en.wikipedia.org/wiki/Table_football', text: 'Foosball'},

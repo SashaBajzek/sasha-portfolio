@@ -10,6 +10,7 @@ import sewing from './sewing.svg'
 import garden from './garden.svg'
 import violin from './violin.svg'
 import modelBridge from './Bridge--Small.jpg'
+import a11y from './a11y.png'
 import bridge from './bridge.svg'
 import inspect from './magnifying_glass.svg'
 import foosball from './foosball.svg'
@@ -30,6 +31,7 @@ export {
   garden,
   violin,
   modelBridge,
+  a11y,
   bridge,
   inspect,
   foosball,
