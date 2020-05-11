@@ -1,77 +1,55 @@
-import React, {Component} from 'react'
-import {Earth} from './Earth'
-import {SaturnSmooth} from './SaturnSmooth'
-import {Moon} from './Moon'
-import {Rocket} from './Rocket'
-import {RocketAlien} from './RocketAlien'
-import {Sun} from './Sun'
-import {EarthMinimal} from './EarthMinimal'
-import {Jupiter} from './Jupiter'
+import React from 'react'
+import {Earth, EarthMinimal, Jupiter, Moon, Rocket, RocketAlien, Saturn, Sun} from './svgs/index.js'
 import './Hero.scss'
 
-class Hero extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      takeoff: '',
-      earthspin: '',
-    }
-  }
+const Hero = ({changePlanet, changeTimeOfDay}) => {
+  const [isTakingOff, setIsTakingOff] = React.useState(false)
+  const [isSpinning, setIsSpinning] = React.useState(false)
 
-  takeoffAnimation = () => {
-    this.setState(prevState => ({
-      takeoff: 'takeoff',
-    }))
+  const takeoffAnimation = () => {
+    setIsTakingOff(true)
 
     setTimeout(() => {
-      this.props.changePlanet()
+      changePlanet()
     }, 4000)
 
     setTimeout(() => {
-      this.setState(prevState => ({
-        takeoff: '',
-      }))
+      setIsTakingOff(false)
     }, 4000)
   }
 
-  earthspinAnimation = () => {
-    this.setState(prevState => ({
-      earthspin: 'earthspin',
-    }))
+  const earthspinAnimation = () => {
+    setIsSpinning(true)
 
     setTimeout(() => {
-      this.setState(prevState => ({
-        earthspin: '',
-      }))
+      setIsSpinning(false)
     }, 5000)
   }
 
-  render() {
-    return (
-      <div id="scrollTo--top" className="section--hero">
-        <div className="container--hero">
-          <h1>Hello World!</h1>
-          <h1>I'm Sasha!</h1>
+  return (
+    <div id="scrollTo--top" className="section--hero">
+      <div className="container--hero">
+        <p className="hero__text">Hello World!</p>
+        <p className="hero__text">I'm Sasha!</p>
 
-          <Earth earthspinAnimation={this.earthspinAnimation} earthspin={this.state.earthspin} />
+        <Earth earthspinAnimation={earthspinAnimation} earthspin={isSpinning ? 'earthspin' : ''} />
 
-          <SaturnSmooth earthspinAnimation={this.earthspinAnimation} earthspin={this.state.earthspin} />
+        <Saturn earthspinAnimation={earthspinAnimation} earthspin={isSpinning ? 'earthspin' : ''} />
 
-          <Moon changeTimeOfDay={this.props.changeTimeOfDay} />
+        <Moon changeTimeOfDay={changeTimeOfDay} />
 
-          <Sun changeTimeOfDay={this.props.changeTimeOfDay} />
+        <Sun changeTimeOfDay={changeTimeOfDay} />
 
-          <EarthMinimal changeTimeOfDay={this.props.changeTimeOfDay} />
+        <EarthMinimal changeTimeOfDay={changeTimeOfDay} />
 
-          <Jupiter changeTimeOfDay={this.props.changeTimeOfDay} />
+        <Jupiter changeTimeOfDay={changeTimeOfDay} />
 
-          <Rocket takeoffAnimation={this.takeoffAnimation} takeoff={this.state.takeoff} />
+        <Rocket takeoffAnimation={takeoffAnimation} takeoff={isTakingOff ? 'takeoff' : ''} />
 
-          <RocketAlien takeoffAnimation={this.takeoffAnimation} takeoff={this.state.takeoff} />
-        </div>
+        <RocketAlien takeoffAnimation={takeoffAnimation} takeoff={isTakingOff ? 'takeoff' : ''} />
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Hero
