@@ -3,7 +3,7 @@ import './Saturn.scss'
 
 const Saturn = ({earthspin, earthspinAnimation}) => (
   <svg
-    role="presentation button"
+    role="presentation"
     viewBox="0 0 209.7 120"
     onClick={earthspinAnimation}
     className={`hero__image--saturn-smooth ${earthspin}`}

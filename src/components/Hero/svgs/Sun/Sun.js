@@ -3,7 +3,7 @@ import './Sun.scss'
 
 const Sun = ({changeTimeOfDay}) => (
   <svg
-    role="presentation button"
+    role="presentation"
     tabIndex="0"
     onClick={changeTimeOfDay}
     onKeyPress={changeTimeOfDay}

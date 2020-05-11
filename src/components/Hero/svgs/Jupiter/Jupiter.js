@@ -3,7 +3,7 @@ import './Jupiter.scss'
 
 const Jupiter = ({changeTimeOfDay}) => (
   <svg
-    role="presentation button"
+    role="presentation"
     tabIndex="0"
     viewBox="0 0 52.3 52.2"
     onClick={changeTimeOfDay}

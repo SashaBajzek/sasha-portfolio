@@ -3,7 +3,7 @@ import './Earth.scss'
 
 const Earth = ({earthspin, earthspinAnimation}) => (
   <svg
-    role="presentation button"
+    role="presentation"
     onClick={earthspinAnimation}
     className={`hero__image--earth ${earthspin}`}
     viewBox="0 0 157.8 155.3"

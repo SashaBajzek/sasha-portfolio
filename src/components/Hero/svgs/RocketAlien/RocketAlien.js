@@ -3,7 +3,7 @@ import './RocketAlien.scss'
 
 const RocketAlien = ({takeoff, takeoffAnimation}) => (
   <svg
-    role="presentation button"
+    role="presentation"
     tabIndex="0"
     viewBox="0 0 220.6 102.6"
     onClick={takeoffAnimation}

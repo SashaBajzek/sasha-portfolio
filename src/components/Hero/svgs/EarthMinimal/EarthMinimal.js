@@ -3,7 +3,7 @@ import './EarthMinimal.scss'
 
 const EarthMinimal = ({changeTimeOfDay}) => (
   <svg
-    role="presentation button"
+    role="presentation"
     tabIndex="0"
     viewBox="0 0 64.2 64.2"
     onClick={changeTimeOfDay}
