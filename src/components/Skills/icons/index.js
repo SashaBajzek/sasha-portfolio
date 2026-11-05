@@ -9,6 +9,7 @@ import sewing from './sewing.svg'
 import garden from './garden.svg'
 import violin from './violin.svg'
 import modelBridge from './Bridge--Small.jpg'
+import robotArm from './robot_arm.svg'
 import a11y from './a11y.png'
 import designSystems from './design_systems.svg'
 import bridge from './bridge.svg'
@@ -29,6 +30,7 @@ export {
   garden,
   violin,
   modelBridge,
+  robotArm,
   a11y,
   designSystems,
   bridge,
