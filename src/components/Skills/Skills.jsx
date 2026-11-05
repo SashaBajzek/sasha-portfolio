@@ -11,7 +11,7 @@ import {
   garden,
   violin,
   modelBridge,
-  robotArm,
+  xlerobot,
   a11y,
   designSystems,
   bridge,
@@ -63,7 +63,7 @@ const Skills = () => {
         'https://web.iit.edu/mediaroom/press-releases/2005/apr/25/tinley-park-high-school-student-wins-28th-international-high',
       text: 'Model Bridge Building',
     },
-    {image: robotArm, link: 'https://github.com/Vector-Wangel/XLeRobot', text: 'Robot Building'},
+    {image: xlerobot, link: 'https://github.com/Vector-Wangel/XLeRobot', text: 'Robot Building'},
   ]
   const practicalSkills = [
     {image: a11y, link: 'https://www.w3.org/WAI/fundamentals/accessibility-intro/', text: 'Accessibility'},
