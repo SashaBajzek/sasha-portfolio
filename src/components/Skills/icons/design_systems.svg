@@ -1,0 +1,5 @@
+<svg role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M50 52 92 70 50 88 8 70Z" fill="#2197D8" stroke="#333333" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M50 34 92 52 50 70 8 52Z" fill="#508730" stroke="#333333" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M50 16 92 34 50 52 8 34Z" fill="#EFD04D" stroke="#333333" stroke-width="4" stroke-linejoin="round"/>
+</svg>
