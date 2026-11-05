@@ -1,5 +1,7 @@
 import React from 'react'
 import {createRoot, hydrateRoot} from 'react-dom/client'
+import '@fontsource/rubik/latin-400.css'
+import '@fontsource/rubik/latin-700.css'
 import './index.css'
 import App from './components/App/App'
 

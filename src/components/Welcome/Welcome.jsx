@@ -1,14 +1,14 @@
 import React from 'react'
 
 import {Alien, Sunflower, SunflowerPetals, Tulips, Vine1, Vine2} from './svgs/index'
-import sasha from './Sasha.jpg'
+import sasha from './Sasha.webp'
 import './Welcome.scss'
 
 const Welcome = () => (
   <section className="section--welcome">
     <div className="container--welcome">
       <h2 className="section__header">Welcome to my portfolio!</h2>
-      <img id="scrollTo--welcome" className="headshot" src={sasha} alt="My Headshot" />
+      <img id="scrollTo--welcome" className="headshot" src={sasha} alt="My Headshot" width="120" height="120" />
       <p className="welcome--text">
         My name is Sasha Bajzek, and I am a software engineer with a structural engineering background. I am a strong
         collaborator, a fast learner, great at working on both the big picture and small details, an accessibility

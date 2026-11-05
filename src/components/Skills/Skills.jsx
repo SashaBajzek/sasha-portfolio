@@ -28,7 +28,7 @@ const SkillItem = ({image, link, text}) => {
   const content = (
     <>
       <p className="skills__name">{text}</p>
-      <img className="skills__logo" src={image} alt="" />
+      <img className="skills__logo" src={image} alt="" width="30" height="30" />
     </>
   )
   return (
