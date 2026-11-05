@@ -17,8 +17,8 @@ class Work extends Component {
           </a>
           <ul className="list--projects">
             <ProjectBox
-              project__name="GoogleyEyes"
-              project__heading="Googley Eyes"
+              project__name="GooglyEyes"
+              project__heading="Googly Eyes"
               project__site="https://eyes.sashabajzek.com/"
               project__description="A web remake of Simone Giertz's googly eye shirt, with eyes that follow your cursor or finger."
             />
