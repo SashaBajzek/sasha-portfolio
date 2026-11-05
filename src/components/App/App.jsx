@@ -11,7 +11,11 @@ import Work from '../Work/Work'
 import './App.scss'
 
 const App = () => {
-  const year = new Date().getFullYear()
+  // The prerendered HTML has the build year; update it in the browser in case the site wasn't rebuilt this year.
+  const [year, setYear] = React.useState(() => new Date().getFullYear())
+  React.useEffect(() => {
+    setYear(new Date().getFullYear())
+  }, [])
 
   const screenWidth = useWindowWidth()
   const [offset, setOffset] = React.useState(0)
