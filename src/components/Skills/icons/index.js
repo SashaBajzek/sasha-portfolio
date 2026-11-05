@@ -1,11 +1,9 @@
 import reactLogo from './react.svg'
-import reduxLogo from './redux.svg'
 import tsLogo from './typescript.svg'
 import htmlLogo from './HTML5_Badge.svg'
 import sassLogo from './sass.svg'
 import storybookLogo from './storybook.svg'
 import jestLogo from './jest.svg'
-import cypressLogo from './cypress.svg'
 import sewing from './sewing.svg'
 import garden from './garden.svg'
 import violin from './violin.svg'
@@ -19,13 +17,11 @@ import brush from './brush.svg'
 
 export {
   reactLogo,
-  reduxLogo,
   tsLogo,
   htmlLogo,
   sassLogo,
   storybookLogo,
   jestLogo,
-  cypressLogo,
   sewing,
   garden,
   violin,

@@ -1,13 +1,11 @@
 import React from 'react'
 import {
   reactLogo,
-  reduxLogo,
   tsLogo,
   htmlLogo,
   sassLogo,
   storybookLogo,
   jestLogo,
-  cypressLogo,
   sewing,
   garden,
   violin,
@@ -24,13 +22,11 @@ import './Skills.scss'
 const Skills = () => {
   const softwareSkills = [
     {image: reactLogo, link: 'https://facebook.github.io/react/', text: 'React'},
-    {image: reduxLogo, link: 'http://redux.js.org/', text: 'Redux'},
     {image: tsLogo, link: 'https://www.typescriptlang.org/', text: 'TypeScript'},
     {image: htmlLogo, link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5', text: 'HTML5'},
     {image: sassLogo, link: 'http://sass-lang.com/', text: 'Sass'},
     {image: storybookLogo, link: 'https://storybook.js.org/', text: 'Storybook'},
     {image: jestLogo, link: 'https://jestjs.io/', text: 'Jest'},
-    {image: cypressLogo, link: 'https://www.cypress.io/', text: 'Cypress'},
   ]
   const hardwareSkills = [
     {image: brush, link: 'https://www.bobross.com/', text: 'Oil Painting'},
