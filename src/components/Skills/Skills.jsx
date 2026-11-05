@@ -18,7 +18,6 @@ import {
   foosball,
   target,
   brush,
-  camping,
 } from './icons/index.js'
 import './Skills.scss'
 
@@ -51,7 +50,6 @@ const Skills = () => {
     {image: inspect, link: 'https://www.fhwa.dot.gov/bridge/inspection/', text: 'Bridge Inspecting'},
     {image: foosball, link: 'https://en.wikipedia.org/wiki/Table_football', text: 'Foosball'},
     {image: target, link: 'https://firearmtraining.nra.org/become-an-instructor/', text: 'Pistol Instructor'},
-    {image: camping, link: 'https://en.wikipedia.org/wiki/Camping', text: 'Camping'},
   ]
   return (
     <section id="scrollTo--skills" className="section--skills">

@@ -16,7 +16,6 @@ import inspect from './magnifying_glass.svg'
 import foosball from './foosball.svg'
 import target from './target.svg'
 import brush from './brush.svg'
-import camping from './camping.svg'
 
 export {
   reactLogo,
@@ -37,5 +36,4 @@ export {
   foosball,
   target,
   brush,
-  camping,
 }
