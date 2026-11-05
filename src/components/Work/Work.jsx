@@ -54,7 +54,7 @@ class Work extends Component {
             <ProjectBox
               project__name="Pacman"
               project__heading="WIP Birthday Pacman"
-              project__site="http://isitjeffreysbday.info/"
+              project__site="https://birthday.sashabajzek.com/"
               project__description="A WIP birthday pacman site made with React and TypeScript"
             />
 
