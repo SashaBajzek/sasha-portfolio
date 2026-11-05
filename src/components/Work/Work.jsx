@@ -31,6 +31,13 @@ class Work extends Component {
             />
 
             <ProjectBox
+              project__name="LewkBuilder"
+              project__heading="Lewk Builder"
+              project__site="https://lewkbuilder.sashabajzek.com/"
+              project__description="An app for building ear piercing looks from the earrings in my collection."
+            />
+
+            <ProjectBox
               project__name="GooglyEyes"
               project__heading="Googly Eyes"
               project__site="https://eyes.sashabajzek.com/"
