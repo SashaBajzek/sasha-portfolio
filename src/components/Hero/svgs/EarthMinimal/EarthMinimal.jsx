@@ -1,13 +1,15 @@
 import React from 'react'
+import onActivateKey from '../onActivateKey'
 import './EarthMinimal.scss'
 
 const EarthMinimal = ({changeTimeOfDay}) => (
   <svg
-    role="presentation"
-    tabIndex="0"
+    role="button"
+    aria-label="Switch between day and night"
     viewBox="0 0 64.2 64.2"
+    tabIndex="0"
     onClick={changeTimeOfDay}
-    onKeyPress={changeTimeOfDay}
+    onKeyDown={onActivateKey(changeTimeOfDay)}
     className="hero__image--earth-minimal"
   >
     <path

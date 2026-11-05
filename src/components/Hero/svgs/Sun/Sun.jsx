@@ -1,12 +1,14 @@
 import React from 'react'
+import onActivateKey from '../onActivateKey'
 import './Sun.scss'
 
 const Sun = ({changeTimeOfDay}) => (
   <svg
-    role="presentation"
+    role="button"
+    aria-label="Switch between day and night"
     tabIndex="0"
     onClick={changeTimeOfDay}
-    onKeyPress={changeTimeOfDay}
+    onKeyDown={onActivateKey(changeTimeOfDay)}
     className="hero__image--sun"
     viewBox="0 0 87 79.2"
   >

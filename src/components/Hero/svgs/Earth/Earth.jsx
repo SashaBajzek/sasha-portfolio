@@ -1,10 +1,14 @@
 import React from 'react'
+import onActivateKey from '../onActivateKey'
 import './Earth.scss'
 
 const Earth = ({earthspin, earthspinAnimation}) => (
   <svg
-    role="presentation"
+    role="button"
+    aria-label="Spin the planet"
+    tabIndex="0"
     onClick={earthspinAnimation}
+    onKeyDown={onActivateKey(earthspinAnimation)}
     className={`hero__image--earth ${earthspin}`}
     viewBox="0 0 157.8 155.3"
   >

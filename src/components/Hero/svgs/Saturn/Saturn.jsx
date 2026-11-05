@@ -1,11 +1,15 @@
 import React from 'react'
+import onActivateKey from '../onActivateKey'
 import './Saturn.scss'
 
 const Saturn = ({earthspin, earthspinAnimation}) => (
   <svg
-    role="presentation"
+    role="button"
+    aria-label="Spin the planet"
     viewBox="0 0 209.7 120"
+    tabIndex="0"
     onClick={earthspinAnimation}
+    onKeyDown={onActivateKey(earthspinAnimation)}
     className={`hero__image--saturn-smooth ${earthspin}`}
   >
     <circle className="saturn-smooth__crater" cx="102.4" cy="59.9" r="59" />

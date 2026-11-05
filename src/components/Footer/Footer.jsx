@@ -13,7 +13,7 @@ const Footer = ({offset, year}) => {
   return (
     <footer>
       <div className="container--footer">
-        <nav>
+        <nav aria-label="Footer">
           <ul className="list--footer-nav">
             <li className="listItem--footer-nav">
               <Link
