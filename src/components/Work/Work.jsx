@@ -17,6 +17,13 @@ class Work extends Component {
           </a>
           <ul className="list--projects">
             <ProjectBox
+              project__name="FaceTimeWeb"
+              project__heading="FaceTime for the Web"
+              project__site="https://support.apple.com/en-us/109364"
+              project__description="Lead UI engineer for FaceTime on the web, which lets Android and Windows users join FaceTime calls from their browser."
+            />
+
+            <ProjectBox
               project__name="GooglyEyes"
               project__heading="Googly Eyes"
               project__site="https://eyes.sashabajzek.com/"
