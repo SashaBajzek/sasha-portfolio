@@ -54,16 +54,16 @@ const Skills = () => {
   ]
   const hardwareSkills = [
     {image: xlerobot, link: 'https://github.com/Vector-Wangel/XLeRobot', text: 'Robot Building'},
-    {image: brush, link: 'https://www.bobross.com/', text: 'Oil Painting'},
-    {image: garden, link: 'https://en.wikipedia.org/wiki/Gardening', text: 'Gardening'},
-    {image: violin, link: 'https://www.britannica.com/art/violin', text: 'Violin'},
-    {image: sewing, link: 'https://en.wikipedia.org/wiki/Sewing#Garment_construction', text: 'Sewing'},
     {
       image: modelBridge,
       link:
         'https://web.iit.edu/mediaroom/press-releases/2005/apr/25/tinley-park-high-school-student-wins-28th-international-high',
       text: 'Model Bridge Building',
     },
+    {image: brush, link: 'https://www.bobross.com/', text: 'Oil Painting'},
+    {image: garden, link: 'https://en.wikipedia.org/wiki/Gardening', text: 'Gardening'},
+    {image: violin, link: 'https://www.britannica.com/art/violin', text: 'Violin'},
+    {image: sewing, link: 'https://en.wikipedia.org/wiki/Sewing#Garment_construction', text: 'Sewing'},
   ]
   const practicalSkills = [
     {image: a11y, link: 'https://www.w3.org/WAI/fundamentals/accessibility-intro/', text: 'Accessibility'},
