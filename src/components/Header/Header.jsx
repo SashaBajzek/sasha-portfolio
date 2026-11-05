@@ -13,10 +13,10 @@ const Header = ({closeHamburger, menuStatus, offset, toggleHamburger}) => {
     <header className={menuStatus}>
       <div className="container--header">
         <h1 className="header__name">Sasha Bajzek</h1>
-        <button onClick={toggleHamburger} className="header__hamburger" tabIndex="0">
+        <button onClick={toggleHamburger} className="header__hamburger" aria-expanded={menuStatus === 'menuOpen'}>
           <span className="visually-hidden">Menu Toggle</span>
         </button>
-        <nav className="header__nav">
+        <nav className="header__nav" aria-label="Main">
           <ul className="list--header-nav">
             {menuItems.map(item => (
               <li className="listItem--header-nav" key={item.tab}>

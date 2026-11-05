@@ -1,12 +1,14 @@
 import React from 'react'
+import onActivateKey from '../onActivateKey'
 import './Rocket.scss'
 
 const Rocket = ({takeoff, takeoffAnimation}) => (
   <svg
-    role="presentation"
+    role="button"
+    aria-label="Launch the rocket"
     tabIndex="0"
     onClick={takeoffAnimation}
-    onKeyPress={takeoffAnimation}
+    onKeyDown={onActivateKey(takeoffAnimation)}
     className={`hero__image--rocket ${takeoff}`}
     viewBox="0 0 119 255"
   >

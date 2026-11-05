@@ -59,11 +59,13 @@ const App = () => {
         offset={offset}
         toggleHamburger={handleToggleMenu}
       />
-      <Hero changePlanet={handleChangePlanet} changeTimeOfDay={handleChangeTime} />
-      <Welcome />
-      <Skills />
-      <Work />
-      <Contact />
+      <main>
+        <Hero changePlanet={handleChangePlanet} changeTimeOfDay={handleChangeTime} />
+        <Welcome />
+        <Skills />
+        <Work />
+        <Contact />
+      </main>
       <Footer offset={offset} year={year} />
     </div>
   )
