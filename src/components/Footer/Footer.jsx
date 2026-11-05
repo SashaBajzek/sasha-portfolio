@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-scroll'
+import {focusHeading} from '../App/focusHeading'
 import './Footer.scss'
 
 const Footer = ({offset, year}) => {
@@ -23,7 +24,8 @@ const Footer = ({offset, year}) => {
                 offset={-70}
                 smooth={true}
                 duration={500}
-                href="#making-focusable"
+                href="#scrollTo--top"
+                onClick={() => focusHeading('heading--top')}
               >
                 <svg role="presentation" viewBox="0 0 33 50" className="footer__uparrow">
                   <polygon className="arrow" points="16.5,1 1,23 32,23 " />
@@ -42,8 +44,9 @@ const Footer = ({offset, year}) => {
                 <Link
                   className="listItem__text--footer-nav"
                   duration={500}
-                  href="#making-focusable"
+                  href={`#scrollTo--${item.tab}`}
                   offset={offset}
+                  onClick={() => focusHeading(`heading--${item.tab}`)}
                   smooth={true}
                   spy={true}
                   to={`scrollTo--${item.tab}`}

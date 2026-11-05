@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-scroll'
+import {focusHeading} from '../App/focusHeading'
 import './Header.scss'
 
 const Header = ({closeHamburger, menuStatus, offset, toggleHamburger}) => {
@@ -12,7 +13,9 @@ const Header = ({closeHamburger, menuStatus, offset, toggleHamburger}) => {
   return (
     <header className={menuStatus}>
       <div className="container--header">
-        <h1 className="header__name">Sasha Bajzek</h1>
+        <h1 id="heading--top" className="header__name" tabIndex={-1}>
+          Sasha Bajzek
+        </h1>
         <button onClick={toggleHamburger} className="header__hamburger" aria-expanded={menuStatus === 'menuOpen'}>
           <span className="visually-hidden">Menu Toggle</span>
         </button>
@@ -25,7 +28,10 @@ const Header = ({closeHamburger, menuStatus, offset, toggleHamburger}) => {
                   duration={500}
                   href={`#scrollTo--${item.tab}`}
                   offset={offset}
-                  onClick={closeHamburger}
+                  onClick={() => {
+                    closeHamburger()
+                    focusHeading(`heading--${item.tab}`)
+                  }}
                   smooth={true}
                   spy={true}
                   to={`scrollTo--${item.tab}`}

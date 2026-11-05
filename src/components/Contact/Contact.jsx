@@ -13,7 +13,9 @@ const Contact = () => {
     <section id="scrollTo--contact" className="section--contact">
       <div className="container--contact">
         <Superhero />
-        <h2 className="section__header">How to reach me</h2>
+        <h2 id="heading--contact" className="section__header" tabIndex={-1}>
+          How to reach me
+        </h2>
         <a className="contact__email" href="mailto:sasha.bajzek@gmail.com">
           sasha.bajzek@gmail.com
         </a>

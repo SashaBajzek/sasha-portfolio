@@ -79,7 +79,9 @@ const Skills = () => {
   return (
     <section id="scrollTo--skills" className="section--skills">
       <div className="container--skills">
-        <h2 className="section__header">My Skills</h2>
+        <h2 id="heading--skills" className="section__header" tabIndex={-1}>
+          My Skills
+        </h2>
         <ul className="list--skills-main">
           <li>
             <h3 className="list__heading--skills-main">Software</h3>
