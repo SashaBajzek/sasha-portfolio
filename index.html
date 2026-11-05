@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="earth--day">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" />
@@ -15,6 +15,13 @@
 
     <link rel="manifest" href="/manifest.json" />
     <title>Sasha Bajzek</title>
+    <!-- Pick day/night before the first paint so the prerendered (daytime) page doesn't flash before React switches it. -->
+    <script>
+      ;(function () {
+        var hour = new Date().getHours()
+        document.documentElement.className = 'earth--' + (hour >= 5 && hour < 17 ? 'day' : 'night')
+      })()
+    </script>
   </head>
   <body>
     <!-- The prerender step (scripts/prerender.js) replaces the comment inside #root with static HTML. -->

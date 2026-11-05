@@ -20,15 +20,17 @@ const App = () => {
   const screenWidth = useWindowWidth()
   const [offset, setOffset] = React.useState(0)
 
-  const [isDayTime, setIsDayTime] = React.useState(true)
+  // The inline script in index.html sets the starting theme class on <html> before the first paint.
+  const [isDayTime, setIsDayTime] = React.useState(
+    () => typeof document === 'undefined' || !document.documentElement.className.endsWith('--night'),
+  )
   const [isOnEarth, setIsOnEarth] = React.useState(true)
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
-  // set initial time
+  // The theme class lives on <html> so the pre-paint script and React share one place.
   React.useEffect(() => {
-    const hour = new Date().getHours()
-    setIsDayTime(hour >= 5 && hour < 17)
-  }, [])
+    document.documentElement.className = `${isOnEarth ? 'earth' : 'space'}--${isDayTime ? 'day' : 'night'}`
+  }, [isOnEarth, isDayTime])
 
   // Add offset in mobile to account for the fixed header when using the scrollTo
   React.useEffect(() => {
@@ -52,7 +54,7 @@ const App = () => {
   }, [isMenuOpen, setIsMenuOpen])
 
   return (
-    <div className={`App ${isOnEarth ? 'earth' : 'space'}--${isDayTime ? 'day' : 'night'}`}>
+    <div className="App">
       <Header
         closeHamburger={handleCloseMenu}
         menuStatus={isMenuOpen ? 'menuOpen' : 'menuClosed'}
