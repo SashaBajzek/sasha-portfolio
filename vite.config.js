@@ -12,8 +12,8 @@ const preloadFonts = () => ({
     handler(html, {bundle}) {
       if (!bundle) return html
       return Object.keys(bundle)
-        .filter((file) => /rubik-latin-(400|700)-normal-.*\.woff2$/.test(file))
-        .map((file) => ({
+        .filter(file => /rubik-latin-(400|700)-normal-.*\.woff2$/.test(file))
+        .map(file => ({
           tag: 'link',
           attrs: {rel: 'preload', href: `/${file}`, as: 'font', type: 'font/woff2', crossorigin: ''},
           injectTo: 'head',
