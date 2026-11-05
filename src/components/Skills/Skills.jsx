@@ -53,6 +53,7 @@ const Skills = () => {
     {image: rosLogo, link: 'https://www.ros.org/', text: 'ROS 2'},
   ]
   const hardwareSkills = [
+    {image: xlerobot, link: 'https://github.com/Vector-Wangel/XLeRobot', text: 'Robot Building'},
     {image: brush, link: 'https://www.bobross.com/', text: 'Oil Painting'},
     {image: garden, link: 'https://en.wikipedia.org/wiki/Gardening', text: 'Gardening'},
     {image: violin, link: 'https://www.britannica.com/art/violin', text: 'Violin'},
@@ -63,7 +64,6 @@ const Skills = () => {
         'https://web.iit.edu/mediaroom/press-releases/2005/apr/25/tinley-park-high-school-student-wins-28th-international-high',
       text: 'Model Bridge Building',
     },
-    {image: xlerobot, link: 'https://github.com/Vector-Wangel/XLeRobot', text: 'Robot Building'},
   ]
   const practicalSkills = [
     {image: a11y, link: 'https://www.w3.org/WAI/fundamentals/accessibility-intro/', text: 'Accessibility'},
