@@ -32,10 +32,6 @@ const Hero = ({changePlanet, changeTimeOfDay}) => {
         <p className="hero__text">Hello World!</p>
         <p className="hero__text">I'm Sasha!</p>
 
-        <Earth earthspinAnimation={earthspinAnimation} earthspin={isSpinning ? 'earthspin' : ''} />
-
-        <Saturn earthspinAnimation={earthspinAnimation} earthspin={isSpinning ? 'earthspin' : ''} />
-
         <Moon changeTimeOfDay={changeTimeOfDay} />
 
         <Sun changeTimeOfDay={changeTimeOfDay} />
@@ -47,6 +43,10 @@ const Hero = ({changePlanet, changeTimeOfDay}) => {
         <Rocket takeoffAnimation={takeoffAnimation} takeoff={isTakingOff ? 'takeoff' : ''} />
 
         <RocketAlien takeoffAnimation={takeoffAnimation} takeoff={isTakingOff ? 'takeoff' : ''} />
+
+        <Earth earthspinAnimation={earthspinAnimation} earthspin={isSpinning ? 'earthspin' : ''} />
+
+        <Saturn earthspinAnimation={earthspinAnimation} earthspin={isSpinning ? 'earthspin' : ''} />
       </div>
     </div>
   )

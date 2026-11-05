@@ -11,7 +11,9 @@ class Work extends Component {
     return (
       <section className="section--work">
         <div className="container--work">
-          <h2 className="section__header">Examples of my work</h2>
+          <h2 id="heading--work" className="section__header" tabIndex={-1}>
+            Examples of my work
+          </h2>
           <a id="scrollTo--work" href={resume} download className="work__resume">
             <p className="work__resume-text">Resum&eacute; Click Here</p>
           </a>

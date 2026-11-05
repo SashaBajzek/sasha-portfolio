@@ -3,7 +3,7 @@
 .section--hero {
   font-size: 20px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: clip;
   padding: 50px 0 100px;
   position: relative;
   text-align: center;
@@ -68,6 +68,17 @@
 .hero__image--earth:hover,
 .hero__image--saturn-smooth:hover {
   cursor: pointer;
+}
+
+.hero__image--earth:focus,
+.hero__image--saturn-smooth:focus {
+  outline: none;
+}
+
+.hero__image--earth:focus-visible,
+.hero__image--saturn-smooth:focus-visible {
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px $maize;
 }
 
 .earthspin {
@@ -154,6 +165,12 @@
   animation: rocket-hover 0.5s infinite ease-out;
   cursor: pointer;
   outline: none;
+}
+
+// Same glow as the contact links, shown only for keyboard focus so mouse clicks don't leave it behind.
+.hero__image--rocket:focus-visible,
+.hero__image--rocket-alien:focus-visible {
+  box-shadow: 0 0 10px 5px $maize;
 }
 
 @keyframes rocket-hover {
@@ -315,6 +332,14 @@
   animation: sunmoon-hover 1s infinite ease-out;
   cursor: pointer;
   outline: none;
+}
+
+.hero__image--moon:focus-visible,
+.hero__image--sun:focus-visible,
+.hero__image--earth-minimal:focus-visible,
+.hero__image--jupiter:focus-visible {
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px $maize;
 }
 
 @keyframes sunmoon-hover {
