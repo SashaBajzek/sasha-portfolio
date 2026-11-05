@@ -24,6 +24,13 @@ class Work extends Component {
             />
 
             <ProjectBox
+              project__name="iCloud"
+              project__heading="iCloud.com Redesign"
+              project__site="https://www.icloud.com/"
+              project__description="UI engineering lead for the 2022 redesign of the iCloud.com homepage."
+            />
+
+            <ProjectBox
               project__name="GooglyEyes"
               project__heading="Googly Eyes"
               project__site="https://eyes.sashabajzek.com/"
