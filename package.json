@@ -3,45 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-hook/window-size": "^2.0.5",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "react-scroll": "^1.7.16"
+    "@react-hook/window-size": "^3.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scroll": "^1.9.3"
   },
   "config": {
-    "script_files_glob": "{*.{js,ts},{src,cypress}/**/*.{js,ts,tsx}}",
+    "script_files_glob": "{*.{js,ts},{src,scripts}/**/*.{js,jsx,ts,tsx}}",
     "style_files_glob": "src/**/*.{css,scss}",
-    "all_files_glob": "{*.{js,json,yaml,yml,md},{src,cypress}/**/*.{js,ts,tsx,css,scss,json,yaml,yml,md}}"
+    "all_files_glob": "{*.{js,json,yaml,yml,md},{src,scripts}/**/*.{js,jsx,ts,tsx,css,scss,json,yaml,yml,md}}"
   },
   "scripts": {
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "prettier:base": "./node_modules/.bin/prettier $npm_package_config_all_files_glob",
-    "prettier": "npm run prettier:base -- --write",
-    "start": "react-scripts start",
-    "test": "react-scripts test"
+    "dev": "vite",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-server && node scripts/prerender.js",
+    "preview": "vite preview",
+    "prettier:base": "prettier $npm_package_config_all_files_glob",
+    "prettier": "npm run prettier:base -- --write"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "@vitejs/plugin-react": "^4.7.0",
+    "prettier": "^3.9.10",
+    "sass": "^1.107.1",
+    "vite": "^6.4.5"
   }
 }
