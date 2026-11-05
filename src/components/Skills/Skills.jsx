@@ -5,7 +5,9 @@ import {
   htmlLogo,
   sassLogo,
   storybookLogo,
-  jestLogo,
+  pythonLogo,
+  jsLogo,
+  huggingFaceLogo,
   rosLogo,
   sewing,
   garden,
@@ -44,13 +46,15 @@ const SkillItem = ({image, link, text}) => {
 
 const Skills = () => {
   const softwareSkills = [
-    {image: reactLogo, link: 'https://facebook.github.io/react/', text: 'React'},
+    {image: rosLogo, link: 'https://www.ros.org/', text: 'ROS 2'},
+    {image: pythonLogo, link: 'https://www.python.org/', text: 'Python'},
+    {image: huggingFaceLogo, link: 'https://github.com/huggingface/lerobot', text: 'LeRobot'},
+    {image: jsLogo, link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', text: 'JavaScript'},
     {image: tsLogo, link: 'https://www.typescriptlang.org/', text: 'TypeScript'},
+    {image: reactLogo, link: 'https://facebook.github.io/react/', text: 'React'},
     {image: htmlLogo, link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5', text: 'HTML5'},
     {image: sassLogo, link: 'http://sass-lang.com/', text: 'Sass'},
     {image: storybookLogo, link: 'https://storybook.js.org/', text: 'Storybook'},
-    {image: jestLogo, link: 'https://jestjs.io/', text: 'Jest'},
-    {image: rosLogo, link: 'https://www.ros.org/', text: 'ROS 2'},
   ]
   const hardwareSkills = [
     {image: xlerobot, link: 'https://github.com/Vector-Wangel/XLeRobot', text: 'Robot Building'},

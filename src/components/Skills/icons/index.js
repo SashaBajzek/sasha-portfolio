@@ -3,7 +3,9 @@ import tsLogo from './typescript.svg'
 import htmlLogo from './HTML5_Badge.svg'
 import sassLogo from './sass.svg'
 import storybookLogo from './storybook.svg'
-import jestLogo from './jest.svg'
+import pythonLogo from './python.svg'
+import jsLogo from './javascript.svg'
+import huggingFaceLogo from './huggingface.svg'
 import rosLogo from './ros.svg'
 import sewing from './sewing.svg'
 import garden from './garden.svg'
@@ -24,7 +26,9 @@ export {
   htmlLogo,
   sassLogo,
   storybookLogo,
-  jestLogo,
+  pythonLogo,
+  jsLogo,
+  huggingFaceLogo,
   rosLogo,
   sewing,
   garden,
