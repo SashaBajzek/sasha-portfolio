@@ -20,25 +20,25 @@ const Contact = () => {
         <ul className="list--contacts">
           <li>
             <a className="contact" href="https://github.com/SashaBajzek">
-              <img className="contact__image contact__image--github" src={GitHubLogo} alt="" />
+              <img className="contact__image contact__image--github" src={GitHubLogo} alt="" width="64" height="64" />
               <span className="visually-hidden">Sasha's Github Account</span>
             </a>
           </li>
           <li>
             <a className="contact" href="https://www.linkedin.com/in/SashaBajzek">
-              <img className="contact__image" src={LinkedInLogo} alt="" />
+              <img className="contact__image" src={LinkedInLogo} alt="" width="66" height="54" />
               <span className="visually-hidden">Sasha's LinkedIn Profile</span>
             </a>
           </li>
           <li>
             <a className="contact" href="https://www.facebook.com/sasha.bajzek">
-              <img className="contact__image" src={FacebookLogo} alt="" />
+              <img className="contact__image" src={FacebookLogo} alt="" width="50" height="50" />
               <span className="visually-hidden">Sasha's Facebook Page</span>
             </a>
           </li>
           <li>
             <a className="contact" href="mailto:sasha.bajzek@gmail.com">
-              <img className="contact__image contact__image--email" src={emailLogo} alt="" />
+              <img className="contact__image contact__image--email" src={emailLogo} alt="" width="253" height="165" />
               <span className="visually-hidden">Email Sasha</span>
             </a>
           </li>

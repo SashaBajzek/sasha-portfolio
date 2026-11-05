@@ -60,6 +60,7 @@
 .contact__image {
   box-shadow: 0 0 10px 10px transparent;
   height: 40px;
+  width: auto; // keep aspect ratio; width/height attributes only reserve space
 }
 
 .contact:hover,
@@ -85,6 +86,7 @@
   animation: superhero-flyby 10s infinite linear;
   display: block;
   height: 40px;
+  width: auto; // keep aspect ratio; width/height attributes only reserve space
   margin: 0 auto;
 }
 
