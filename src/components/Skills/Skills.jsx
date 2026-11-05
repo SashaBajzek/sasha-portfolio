@@ -12,6 +12,7 @@ import {
   violin,
   modelBridge,
   a11y,
+  designSystems,
   bridge,
   inspect,
   foosball,
@@ -19,6 +20,26 @@ import {
   brush,
 } from './icons/index.js'
 import './Skills.scss'
+
+const SkillItem = ({image, link, text}) => {
+  const content = (
+    <>
+      <p className="skills__name">{text}</p>
+      <img className="skills__logo" src={image} alt="" />
+    </>
+  )
+  return (
+    <li>
+      {link ? (
+        <a className="skill" href={link}>
+          {content}
+        </a>
+      ) : (
+        <div className="skill">{content}</div>
+      )}
+    </li>
+  )
+}
 
 const Skills = () => {
   const softwareSkills = [
@@ -44,6 +65,7 @@ const Skills = () => {
   ]
   const practicalSkills = [
     {image: a11y, link: 'https://www.w3.org/WAI/fundamentals/accessibility-intro/', text: 'Accessibility'},
+    {image: designSystems, text: 'Design Systems'},
     {image: bridge, link: 'https://en.wikipedia.org/wiki/Structural_engineering', text: 'Structural Engineering'},
     {image: inspect, link: 'https://www.fhwa.dot.gov/bridge/inspection/', text: 'Bridge Inspecting'},
     {image: foosball, link: 'https://en.wikipedia.org/wiki/Table_football', text: 'Foosball'},
@@ -58,12 +80,7 @@ const Skills = () => {
             <h3 className="list__heading--skills-main">Software</h3>
             <ul className="list--skills-sub">
               {softwareSkills.map(item => (
-                <li key={item.text}>
-                  <a className="skill" href={item.link}>
-                    <p className="skills__name">{item.text}</p>
-                    <img className="skills__logo" src={item.image} alt="" />
-                  </a>
-                </li>
+                <SkillItem key={item.text} {...item} />
               ))}
             </ul>
           </li>
@@ -72,12 +89,7 @@ const Skills = () => {
             <h3 className="list__heading--skills-main">Hardware</h3>
             <ul className="list--skills-sub">
               {hardwareSkills.map(item => (
-                <li key={item.text}>
-                  <a className="skill" href={item.link}>
-                    <p className="skills__name">{item.text}</p>
-                    <img className="skills__logo" src={item.image} alt="" />
-                  </a>
-                </li>
+                <SkillItem key={item.text} {...item} />
               ))}
             </ul>
           </li>
@@ -86,12 +98,7 @@ const Skills = () => {
             <h3 className="list__heading--skills-main">Practical</h3>
             <ul className="list--skills-sub">
               {practicalSkills.map(item => (
-                <li key={item.text}>
-                  <a className="skill" href={item.link}>
-                    <p className="skills__name">{item.text}</p>
-                    <img className="skills__logo" src={item.image} alt="" />
-                  </a>
-                </li>
+                <SkillItem key={item.text} {...item} />
               ))}
             </ul>
           </li>
