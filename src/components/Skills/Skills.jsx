@@ -6,6 +6,7 @@ import {
   sassLogo,
   storybookLogo,
   jestLogo,
+  rosLogo,
   sewing,
   garden,
   violin,
@@ -27,6 +28,7 @@ const Skills = () => {
     {image: sassLogo, link: 'http://sass-lang.com/', text: 'Sass'},
     {image: storybookLogo, link: 'https://storybook.js.org/', text: 'Storybook'},
     {image: jestLogo, link: 'https://jestjs.io/', text: 'Jest'},
+    {image: rosLogo, link: 'https://www.ros.org/', text: 'ROS 2'},
   ]
   const hardwareSkills = [
     {image: brush, link: 'https://www.bobross.com/', text: 'Oil Painting'},

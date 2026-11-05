@@ -4,6 +4,7 @@ import htmlLogo from './HTML5_Badge.svg'
 import sassLogo from './sass.svg'
 import storybookLogo from './storybook.svg'
 import jestLogo from './jest.svg'
+import rosLogo from './ros.svg'
 import sewing from './sewing.svg'
 import garden from './garden.svg'
 import violin from './violin.svg'
@@ -22,6 +23,7 @@ export {
   sassLogo,
   storybookLogo,
   jestLogo,
+  rosLogo,
   sewing,
   garden,
   violin,
