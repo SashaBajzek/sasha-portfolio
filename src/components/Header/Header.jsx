@@ -10,13 +10,23 @@ const Header = ({closeHamburger, menuStatus, offset, toggleHamburger}) => {
     {tab: 'work', text: 'Examples'},
     {tab: 'contact', text: 'Contact'},
   ]
+  // The slide transition is turned on at the first toggle; with it on from the start some
+  // mobile browsers animate the closed menu across the screen while the page loads.
+  const [hasToggled, setHasToggled] = React.useState(false)
   return (
-    <header className={menuStatus}>
+    <header className={hasToggled ? `${menuStatus} menuAnimated` : menuStatus}>
       <div className="container--header">
         <h1 id="heading--top" className="header__name" tabIndex={-1}>
           Sasha Bajzek
         </h1>
-        <button onClick={toggleHamburger} className="header__hamburger" aria-expanded={menuStatus === 'menuOpen'}>
+        <button
+          onClick={() => {
+            setHasToggled(true)
+            toggleHamburger()
+          }}
+          className="header__hamburger"
+          aria-expanded={menuStatus === 'menuOpen'}
+        >
           <span className="visually-hidden">Menu Toggle</span>
         </button>
         <nav className="header__nav" aria-label="Main">
