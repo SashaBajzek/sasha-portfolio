@@ -60,8 +60,7 @@ const Skills = () => {
     {image: xlerobot, link: 'https://github.com/Vector-Wangel/XLeRobot', text: 'Robot Building'},
     {
       image: modelBridge,
-      link:
-        'https://web.iit.edu/mediaroom/press-releases/2005/apr/25/tinley-park-high-school-student-wins-28th-international-high',
+      link: 'https://web.iit.edu/mediaroom/press-releases/2005/apr/25/tinley-park-high-school-student-wins-28th-international-high',
       text: 'Model Bridge Building',
     },
     {image: brush, link: 'https://www.bobross.com/', text: 'Oil Painting'},

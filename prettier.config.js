@@ -1,8 +1,8 @@
-module.exports = {
+export default {
   arrowParens: 'avoid',
   bracketSpacing: false,
   endOfLine: 'lf',
-  jsxBracketSameLine: false,
+  bracketSameLine: false,
   jsxSingleQuote: false,
   printWidth: 120,
   quoteProps: 'as-needed',
