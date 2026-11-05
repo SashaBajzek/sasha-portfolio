@@ -40,8 +40,7 @@ const Skills = () => {
     {image: sewing, link: 'https://en.wikipedia.org/wiki/Sewing#Garment_construction', text: 'Sewing'},
     {
       image: modelBridge,
-      link:
-        'https://web.iit.edu/mediaroom/press-releases/2005/apr/25/tinley-park-high-school-student-wins-28th-international-high',
+      link: 'https://web.iit.edu/mediaroom/press-releases/2005/apr/25/tinley-park-high-school-student-wins-28th-international-high',
       text: 'Model Bridge Building',
     },
   ]
