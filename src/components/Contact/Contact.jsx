@@ -3,7 +3,6 @@ import React from 'react'
 import {Superhero} from './Superhero/Superhero'
 import GitHubLogo from './images/GitHub-Mark-Light-64px.png'
 import LinkedInLogo from './images/In-White-54px-TM.png'
-import FacebookLogo from './images/FB-f-Logo__white_50.png'
 import emailLogo from './images/email.svg'
 
 import './Contact.scss'
@@ -30,12 +29,6 @@ const Contact = () => {
             <a className="contact" href="https://www.linkedin.com/in/SashaBajzek">
               <img className="contact__image" src={LinkedInLogo} alt="" width="66" height="54" />
               <span className="visually-hidden">Sasha's LinkedIn Profile</span>
-            </a>
-          </li>
-          <li>
-            <a className="contact" href="https://www.facebook.com/sasha.bajzek">
-              <img className="contact__image" src={FacebookLogo} alt="" width="50" height="50" />
-              <span className="visually-hidden">Sasha's Facebook Page</span>
             </a>
           </li>
           <li>

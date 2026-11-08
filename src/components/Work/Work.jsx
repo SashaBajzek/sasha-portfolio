@@ -77,7 +77,6 @@ class Work extends Component {
             <ProjectBox
               project__name="IL104"
               project__heading="IL104 Bridge at Meredosia"
-              project__site="https://www.seaoi.org/sites/default/files/media/pdf/Bridge/seaoi_bridge_symposium_2016_patel.pdf"
               project__description="Designed the steel plate girders, steel details, joints, and bearings for nine of the 140 to 200ft long approach spans."
             />
 

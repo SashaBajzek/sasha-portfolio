@@ -51,7 +51,7 @@ const Skills = () => {
     {image: huggingFaceLogo, link: 'https://github.com/huggingface/lerobot', text: 'LeRobot'},
     {image: jsLogo, link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', text: 'JavaScript'},
     {image: tsLogo, link: 'https://www.typescriptlang.org/', text: 'TypeScript'},
-    {image: reactLogo, link: 'https://facebook.github.io/react/', text: 'React'},
+    {image: reactLogo, link: 'https://react.dev/', text: 'React'},
     {image: htmlLogo, link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5', text: 'HTML5'},
     {image: sassLogo, link: 'http://sass-lang.com/', text: 'Sass'},
     {image: storybookLogo, link: 'https://storybook.js.org/', text: 'Storybook'},
